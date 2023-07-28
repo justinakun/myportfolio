@@ -1,0 +1,37 @@
+@import "../../styles/fonts.scss";
+
+.topbar-container {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    align-items: center;
+    padding: 2rem;
+
+    .logo-container{
+
+    }
+
+    .navigation-items{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        
+        .nav-items-div{
+            display: flex;
+            align-content: center;
+            .nav-item {
+                padding-right: 2rem;
+                align-self: center;  
+                font-family: $linkFont;      
+            }
+    
+            .dot{
+                font-size: 1.5rem;
+                color: grey;
+                align-self: center;
+            }
+        }
+     
+
+    }
+}

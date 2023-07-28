@@ -1,0 +1,21 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+.styled-button {
+    font-family: $buttonFont;
+    font-size: 1em;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 35px;
+    &.contained {
+        background: linear-gradient(90deg, $buttonMain 25%, $buttonDark 100%);
+    }
+
+    &.outlined {
+        border-color: $buttonMain;
+        border-width: 3px;
+        border-style: solid;
+        background: transparent;
+    }
+}
