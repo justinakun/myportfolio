@@ -1,0 +1,26 @@
+@import "../../styles/fonts.scss";
+
+.contact-form {
+    width: 350px;
+    
+    .get-in-touch{
+        font-family: $buttonFont;
+        font-size: 1.5em;
+    }
+
+    input {
+        padding: 1em;
+        border-radius: 25px;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    textarea {
+        padding: 1em;
+        width: 100%;
+        border-radius: 20px;
+        resize: none;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 1em;
+    }
+}

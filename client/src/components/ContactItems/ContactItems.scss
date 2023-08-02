@@ -1,0 +1,16 @@
+.contacts-items {
+    color: white;
+
+    .contact-item{
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        .icon {
+            font-style: italic;
+            font-size: 3rem;
+            margin-right: 1rem;
+        }    
+    }
+
+}

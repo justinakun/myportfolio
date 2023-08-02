@@ -1,0 +1,15 @@
+@import "../../styles/fonts.scss";
+@import "../../styles/colors.scss";
+
+.contacts-container {
+    position: relative;
+    background-image: url("../../png/map3.png");
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(25, 29, 58, 0.87);
+    min-height: 88vh;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+}
