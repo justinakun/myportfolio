@@ -1,0 +1,58 @@
+@import "../../styles/fonts.scss";
+@import "../../styles/colors.scss";
+
+.work-item {
+    width: 100%;
+    height: 100px;
+    border: 1px solid $lightGrey;
+    border-right: none;
+    border-left: none;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1.5fr 1fr;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: linear-gradient(90deg, rgba(25, 29, 58, 1) 0%, rgb(44, 48, 87)
+    50%, rgba(25, 29, 58, 1) 100%);
+
+    .work-item-number-container {
+        font-family: $buttonFont;
+        font-size: large;
+        color: $lighViolet;
+        justify-self: center;
+        padding-left: 3rem;
+
+        .work-item-number {
+            width: 17px;
+            border-bottom: 3px solid $lighViolet;
+            padding-bottom: 1rem;
+        }     
+    }
+
+    .work-item-title {
+        font-family: $buttonFont;
+        font-size: 5rem;
+        font-weight: light;
+        line-height: 1;
+    }
+
+    .work-item-description{
+        color: $lightGrey;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        font-family: $linkFont;
+        padding-right: 2.5rem;
+        padding-left: 1rem;
+    }
+
+    .work-item-skills{
+       padding-left: 2.5rem;
+       padding-top: 0.5rem;
+    }
+ 
+    .work-item-more {
+        align-self: center;
+    }
+    
+
+}

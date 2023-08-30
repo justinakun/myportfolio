@@ -17,7 +17,7 @@ const ClipboardText = ({ text }) => {
 
   return (
     <span onClick={handleCopy} style={{ cursor: "pointer" }}>
-      {isCopied ? "Copied!" : text}
+      {isCopied ? "Copied the email address!" : text}
     </span>
   );
 };

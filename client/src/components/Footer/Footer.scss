@@ -1,0 +1,9 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+.footer-container {
+    background-color: $primaryMain;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
