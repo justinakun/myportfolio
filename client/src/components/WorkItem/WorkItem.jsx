@@ -1,5 +1,5 @@
 import "./WorkItem.scss";
-import MoreIcon from "../MoreIcon/MoreIcon";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const WorkItem = ({ number, title, description, skills }) => {
   return (
@@ -11,7 +11,7 @@ const WorkItem = ({ number, title, description, skills }) => {
       <div className="work-item-description">{description}</div>
       <div className="work-item-skills">{skills}</div>
       <div className="work-item-more">
-        <MoreIcon />
+        <MdKeyboardArrowRight className="more-icon" />
       </div>
     </div>
   );

@@ -1,6 +1,30 @@
 @import "../../styles/fonts.scss";
 @import "../../styles/colors.scss";
 
+@keyframes moveForward {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+        z-index: -1;
+    }
+    20% {
+        transform: translateX(-15px);
+        opacity: 1;
+        z-index: 1;
+    }
+    90% {
+        transform: translateX(10px);
+        opacity: 1;
+        z-index: 1;
+    }
+    100% {
+        transform: translateX(10px);
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+
 .work-item {
     width: 100%;
     height: 100px;
@@ -52,7 +76,33 @@
  
     .work-item-more {
         align-self: center;
+        border:1px solid $lightGrey;
+        border-radius: 40px;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .more-icon {            
+            font-size: 2rem;
+        }
     }
-    
+
+    &:hover .more-icon {
+        color: green;  
+        animation: moveForward 1s infinite;
+        opacity: 1; 
+        z-index: 1;         
+    }
+        
+    &:hover .work-item-more{
+        border-color: green;
+        border-width: 3px;
+    }
 
 }
+
+
+
