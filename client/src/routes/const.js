@@ -1,28 +1,44 @@
 import Main from "../pages/Main/Main";
 import Works from "../pages/Works/Works";
 import Contacts from "../pages/Contacts/Contacts";
-
-export const MAIN_ROUTE = "/";
-export const WORKS_ROUTE = "/works";
-export const CONTACTS_ROUTE = "/contacts";
+import WorksOne from "../pages/WorksOne/WorksOne";
+import WorksTwo from "../pages/WorksTwo/WorksTwo";
+import WorksThree from "../pages/WorksThree/WorksThree";
+import WorksFour from "../pages/WorksFour/WorksFour";
 
 export const unauthenticatedRoutes = [
   {
-    path: MAIN_ROUTE,
+    path: "/",
     Component: Main,
   },
   {
-    path: WORKS_ROUTE,
+    path: "/works",
     Component: Works,
   },
   {
-    path: CONTACTS_ROUTE,
+    path: "/contacts",
     Component: Contacts,
+  },
+  {
+    path: "/works/1",
+    Component: WorksOne,
+  },
+  {
+    path: "/works/2",
+    Component: WorksTwo,
+  },
+  {
+    path: "/works/3",
+    Component: WorksThree,
+  },
+  {
+    path: "/works/4",
+    Component: WorksFour,
   },
 ];
 
 export const topbarNavigationItems = [
-  { route: MAIN_ROUTE, title: "Main" },
-  { route: WORKS_ROUTE, title: "Works" },
-  { route: CONTACTS_ROUTE, title: "Contacts" },
+  { route: "/", title: "Main" },
+  { route: "/works", title: "Works" },
+  { route: "/contacts", title: "Contacts" },
 ];

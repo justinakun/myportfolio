@@ -1,3 +1,9 @@
+@import "../../styles/colors.scss";
+
 .works-container {
     background-color: none;
+}
+
+.works-container > :last-child {
+    border-bottom: 1px solid $darkGrey;
 }

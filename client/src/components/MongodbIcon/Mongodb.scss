@@ -2,7 +2,7 @@
 @import "../../styles/fonts.scss";
 
 .mongodb-icon-container {
-    border: 1px solid $lightGrey;
+    border: 1px solid $darkGrey;
     font-family: $linkFont;
     color: $lighViolet;
     padding: 0.5rem;
@@ -12,6 +12,7 @@
     align-items: center;
     gap: 0.5rem;
     width: 100px;
+    height: 20px;
     margin-bottom: 0.5rem;
     .icon {
         color: $lightYellow;
