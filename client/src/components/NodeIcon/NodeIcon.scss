@@ -1,0 +1,19 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+.node-icon-container {
+    border: 1px solid $lightGrey;
+    font-family: $linkFont;
+    color: $lighViolet;
+    padding: 0.5rem;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 80px;
+    margin-bottom: 0.5rem;
+    .icon {
+        color: $lightYellow;
+    }
+}
