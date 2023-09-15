@@ -40,5 +40,5 @@ export const unauthenticatedRoutes = [
 export const topbarNavigationItems = [
   { route: "/", title: "Main" },
   { route: "/works", title: "Works" },
-  { route: "/contacts", title: "Contacts" },
+  { route: "/contacts", title: "Contact" },
 ];

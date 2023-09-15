@@ -1,0 +1,19 @@
+@import "../../styles/colors.scss";
+
+.beads-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 12rem;
+    .bead-icon {
+        border: 3px solid $lighViolet;
+        border-radius: 25px;
+        padding: 0.5rem;
+    }
+
+    .bead-line {
+        border-top: 3px solid $lighViolet;
+        width: 41px;
+        align-items: center;
+    }
+}

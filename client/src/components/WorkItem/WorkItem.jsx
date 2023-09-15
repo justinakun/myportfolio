@@ -5,7 +5,6 @@ import { unauthenticatedRoutes } from "../../routes/const";
 import "./WorkItem.scss";
 
 const WorkItem = ({ number, title, description, skills }) => {
-  // Find the corresponding route object based on the number
   const route = unauthenticatedRoutes.find(
     (route) => route.path === `/works/${number}`
   );

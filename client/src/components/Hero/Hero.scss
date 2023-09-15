@@ -1,0 +1,50 @@
+@import "../../styles/fonts.scss";
+@import "../../styles/colors.scss";
+
+.hero-container {
+    height: 87vh;
+    display: grid;
+    margin-right: 10rem;
+    grid-template-columns: 1fr 1fr;
+
+    .hero-image-container {
+        margin-left: 8rem;
+
+        .hero-image {
+            width: 100%;
+        }
+    }
+
+    .hero-description {
+        display: grid;
+        grid-template-rows: 2fr 2fr 1fr 2fr;
+        justify-items: right;  
+
+        .hero-description-top {
+            align-self: flex-end;
+        }
+        
+        .hero-description-middle {
+            font-family: $buttonFont;
+            font-size: 7rem;
+            font-weight: light;
+            margin: 0;
+        }
+
+        .hero-beads {
+            align-self: flex-start;            
+        }
+
+        .hero-description-bottom {
+            align-self: flex-start;  
+            color: $lightGrey;
+            justify-self: flex-end;
+            font-family: $linkFont;
+            
+            .hero-bottom {
+                width: 250px;
+                text-align: end;
+            }
+        }
+    }
+}
