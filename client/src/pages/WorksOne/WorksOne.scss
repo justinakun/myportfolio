@@ -1,22 +1,22 @@
-.works-two-container {
+.works-one-container {
     padding-bottom: 2rem;
     background-color: grey;
     display: grid;
     justify-items: center;
-    .works-two-title {
+    .works-one-title {
         padding: 2rem;
     }
 
-    .works-two-description {
+    .works-one-description {
         padding: 2rem;
         width: 700px;
         text-align: center;
     }
-    .works-two-image {
+    .works-one-image {
         justify-self: center;
 
         img {
-            width: 500px;
+            width: 700px;
             height: 300px;
         }
     }
