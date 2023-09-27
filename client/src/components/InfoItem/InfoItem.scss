@@ -1,0 +1,45 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+.infoitem-container {
+    .info-line {
+        height: 5rem;
+        background-color: $primaryMain;
+    }
+
+    .info-descriptions {
+        width: 80%;
+        display: flex;  
+        justify-content: space-around;  
+        text-align:right;
+        .info-description {
+            width: 300px;
+            border: 3px solid $lighViolet;
+            padding: 1rem;
+            border-radius: 15px;
+            font-family: $linkFont;
+            color: $textMain;
+            margin: 1rem;
+
+            .desc-header {
+                display: flex;
+                justify-content: space-between;
+                
+                .transparent {
+                    opacity: 0.3;
+                }
+            }
+    }
+        .desc-one {
+            background-color: orange;
+        }
+
+        .desc-two {
+            background-color: yellow;
+        }
+
+        .desc-three {
+            background-color: rgb(138, 228, 85);
+        }
+}
+}

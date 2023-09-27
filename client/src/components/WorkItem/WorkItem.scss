@@ -36,8 +36,8 @@
     grid-template-columns: 1fr 2fr 2fr 1.5fr 1fr;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background: linear-gradient(90deg, rgba(25, 29, 58, 1) 0%, rgb(44, 48, 87)
-    50%, rgba(25, 29, 58, 1) 100%);
+    background: linear-gradient(90deg, rgb(168, 168, 168) 0%, rgb(186, 187, 187)
+    50%, rgb(168, 168, 168) 100%);
 
     .work-item-number-container {
         font-family: $buttonFont;
@@ -55,7 +55,7 @@
 
     .work-item-title {
         font-family: $buttonFont;
-        font-size: 5rem;
+        font-size: 4rem;
         font-weight: light;
         line-height: 1;
     }

@@ -1,0 +1,16 @@
+.works-two-container {
+    background-color: grey;
+    margin: 0 auto;
+    display: flexbox;
+    .works-two-title {
+
+    }
+    .works-two-image {
+        width: 700px;
+
+        img {
+            width: 400px;
+            height: 300px;
+        }
+    }
+}

@@ -2,7 +2,7 @@
 @import "../../styles/colors.scss";
 
 .hero-container {
-    height: 87vh;
+    height: 100vh;
     display: grid;
     margin-right: 10rem;
     grid-template-columns: 1fr 1fr;
@@ -26,7 +26,7 @@
         
         .hero-description-middle {
             font-family: $buttonFont;
-            font-size: 7rem;
+            font-size: 4rem;
             font-weight: light;
             margin: 0;
         }

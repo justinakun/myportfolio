@@ -3,12 +3,13 @@
 
 .topbar-container {
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 2fr 6fr;
     align-items: center;
     padding: 2rem;
 
     .logo-container{
-
+        font-family: $linkFont;
+        font-size: large;
     }
 
     .navigation-items{ 
@@ -28,7 +29,7 @@
     
             .dot{
                 font-size: 1.5rem;
-                color: grey;
+                color: $textMain;
                 align-self: center;
             }
         }

@@ -7,7 +7,7 @@ const Topbar = () => {
   const itemsLength = topbarNavigationItems.length - 1;
   return (
     <div className="topbar-container">
-      <div className="logo-container">Logo</div>
+      <div className="logo-container">JUSTINA KUNIGONYTE</div>
       <div className="navigation-items">
         {topbarNavigationItems.map((item, index) => (
           <div key={item.title} className="nav-items-div">

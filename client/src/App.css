@@ -1,10 +1,11 @@
+@import "../src/styles/colors.scss";
+
 body {
-    color: white;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
