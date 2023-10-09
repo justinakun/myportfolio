@@ -2,7 +2,13 @@
 
 .main-container {
     background-color: $primaryDark;
-    padding-bottom: 1rem;    
+    padding-bottom: 1rem;   
+    
+    .container-slides {
+        width: 500px;
+        height: 280px;
+        margin: 0 auto;
+    }
 
 }
 

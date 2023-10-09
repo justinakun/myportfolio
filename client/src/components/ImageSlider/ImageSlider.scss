@@ -1,0 +1,28 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+.slide-container {
+    background-color: red;
+    border: 3px solid $lighViolet;
+    border-radius: 15px;
+    font-family: $linkFont;
+    padding: 1rem;
+    margin: 1rem;
+    color: $textMain;
+
+    .slide-heading {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slide-year {
+        opacity: 0.3;
+    }
+
+    .slide-content {        
+        margin: 1rem;
+        margin-top: 5rem ;
+        text-align:right;
+    }
+
+}
