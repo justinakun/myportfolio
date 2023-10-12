@@ -1,28 +1,74 @@
 @import "../../styles/colors.scss";
 @import "../../styles/fonts.scss";
 
-.slide-container {
-    background-color: red;
+.slider-container {
+    width: 500px;
+    height: 320px;
+    position: "relative";
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    background-color: pink;
     border: 3px solid $lighViolet;
     border-radius: 15px;
-    font-family: $linkFont;
-    padding: 1rem;
-    margin: 1rem;
-    color: $textMain;
 
-    .slide-heading {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .slide-year {
+    .slider-arrow {
+        position: "absolute";
+        top: "50%";
+        font-size: 2.5rem;
+        cursor: pointer;
+        z-index: 1;     
+        place-self: center center;
         opacity: 0.3;
     }
 
-    .slide-content {        
-        margin: 1rem;
-        margin-top: 5rem ;
-        text-align:right;
+    .left-slider-arrow {        
+        left: "32px";       
     }
 
+    .right-slider-arrow {
+        right: "32px";   
+    }
+
+    .slide-container {
+        font-family: $linkFont;
+        color: $textMain;
+        background-position: "center";
+        background-size: "cover";
+        display: grid;
+        grid-template-rows: 3fr 4fr 3fr;
+
+        // background-color: `${slides[currentIndex].backgroundColor}`;
+    
+        .slide-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .slide-year {
+                opacity: 0.3;
+            }
+        }  
+
+        .slide-content {        
+            text-align: right;
+            align-self: center;
+        }
+
+        .slides-lines-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            .slides-lines {
+                cursor: pointer;
+                font-size: 40px;
+                opacity: 0.3;               
+            }
+
+            .current-line {
+                opacity: 10;
+            }
+        }
+}
 }

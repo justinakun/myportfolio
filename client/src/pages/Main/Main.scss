@@ -2,12 +2,12 @@
 
 .main-container {
     background-color: $primaryDark;
-    padding-bottom: 1rem;   
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-rows: 3fr 2fr;
     
     .container-slides {
-        width: 500px;
-        height: 280px;
-        margin: 0 auto;
+
     }
 
 }
