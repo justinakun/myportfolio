@@ -1,7 +1,9 @@
 @import "../../styles/fonts.scss";
+@import "../../styles/colors.scss";
 
 .contact-form {
     width: 350px;
+    color: $pavement;
     
     .get-in-touch{
         font-family: $buttonFont;

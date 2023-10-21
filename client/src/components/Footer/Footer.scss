@@ -1,8 +1,12 @@
 @import "../../styles/colors.scss";
 @import "../../styles/fonts.scss";
+@import "../../styles/shadows.scss";
+
 
 .footer-container {
-    background-color: $primaryMain;
+    box-shadow: $shadowone;
+    color: $pavement;
+    background-color: $newgrey;
     padding: 2rem;
     margin-top: 0;
     display: flex;

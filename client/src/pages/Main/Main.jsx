@@ -2,6 +2,7 @@ import Hero from "../../components/Hero/Hero";
 import ImageSlider from "../../components/ImageSlider/ImageSlider";
 import "./Main.scss";
 import CVModal from "../../components/CVModal/CVModal";
+import TinyCard from "../../components/TinyCard/TinyCard";
 
 const Main = () => {
   const slides = [
@@ -11,6 +12,7 @@ const Main = () => {
         "Completed Harvard University's introduction to computer science course. I learned how to think algorithmically and solve problems efficiently. Languages included C, Python, SQL, and JavaScript plus CSS and HTML.",
       title: "CS50x",
       backgroundColor: "orange",
+      image: "./duck.png",
     },
     {
       year: "2023",
@@ -31,6 +33,9 @@ const Main = () => {
     <div className="main-container">
       <Hero />
       <div className="container-slides">
+        <div>
+          <TinyCard text="" image="" />
+        </div>
         <ImageSlider slides={slides} />
       </div>
     </div>

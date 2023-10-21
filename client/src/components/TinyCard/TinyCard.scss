@@ -1,0 +1,18 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+.tinycard-container {
+    color: $pavement;
+
+    .tinycard-title{
+
+        font-family: $buttonFont;
+        font-size: 4rem;
+        font-weight: light;
+        margin: 0;
+
+        h4 {
+            text-align: right;
+        }
+    }
+}

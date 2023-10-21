@@ -4,12 +4,12 @@
 .styled-button {
     font-family: $buttonFont;
     font-size: 1em;
-    color: white;
+    color: $pavement;
     padding: 1em 2em;
     border: none;
     border-radius: 35px;
     &.contained {
-        background: linear-gradient(90deg, $buttonMain 25%, $buttonDark 100%);
+        background-color:$deepcustard;
     }
 
     &.outlined {

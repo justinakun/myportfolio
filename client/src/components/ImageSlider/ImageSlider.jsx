@@ -25,9 +25,14 @@ const ImageSlider = ({ slides }) => {
     setCurrentIndex(slideIndex);
   };
 
-  const handleCv = () => {
+  const handleCvOn = () => {
     setCvClicked(true);
     stopAutoSlide();
+  };
+
+  const handleCvOff = () => {
+    setCvClicked(false);
+    restartAutoSlide();
   };
 
   // Function to stop the automatic sliding
@@ -35,11 +40,16 @@ const ImageSlider = ({ slides }) => {
     setAutoSlideEnabled(false);
   };
 
+  //Function to re-start the automatic sliding
+  const restartAutoSlide = () => {
+    setAutoSlideEnabled(true);
+  };
+
   useEffect(() => {
     let interval;
 
     if (autoSlideEnabled) {
-      interval = setInterval(goToNext, 3000);
+      interval = setInterval(goToNext, 5000);
     }
 
     return () => clearInterval(interval);
@@ -60,7 +70,11 @@ const ImageSlider = ({ slides }) => {
         </div>
         <div className="slide-content">
           {slides[currentIndex].content}
-          {slides[currentIndex].cvmodal && <CVModal onClick={handleCv} />}
+          {slides[currentIndex].cvmodal && (
+            <div onClick={handleCvOn}>
+              <CVModal />
+            </div>
+          )}
         </div>
         <div className="slides-lines-container">
           {slides.map((slide, slideIndex) => (

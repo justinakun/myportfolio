@@ -1,6 +1,9 @@
+@import "../../styles/colors.scss";
+
 .works-one-container {
     padding-bottom: 2rem;
-    background-color: grey;
+    background-color: $newgrey;
+    color: $pavement;
     display: grid;
     justify-items: center;
     .works-one-title {

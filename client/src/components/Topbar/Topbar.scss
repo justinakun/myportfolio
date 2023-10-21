@@ -10,6 +10,7 @@
     .logo-container{
         font-family: $linkFont;
         font-size: large;
+        color: $pavement;
     }
 
     .navigation-items{ 
@@ -29,7 +30,7 @@
     
             .dot{
                 font-size: 1.5rem;
-                color: $textMain;
+                color: $pavement;
                 align-self: center;
             }
         }

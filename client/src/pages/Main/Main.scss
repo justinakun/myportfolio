@@ -1,14 +1,28 @@
 @import "../../styles/colors.scss";
 
 .main-container {
-    background-color: $primaryDark;
-    padding-bottom: 1rem;
+    margin: 0 3rem 3rem 3rem;
     display: grid;
-    grid-template-rows: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+
+    .me-essay {
+        line-height: 130%;
+        display: grid;
+        align-items: center;
     
-    .container-slides {
+        .me-essay-bit {
+            border: 3px solid black;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+        }
 
     }
-
+    
+    .container-slides {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
 }
 

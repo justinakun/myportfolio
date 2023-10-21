@@ -2,23 +2,24 @@
 @import "../../styles/colors.scss";
 
 .hero-container {
-    height: 100vh;
     display: grid;
-    margin-right: 10rem;
     grid-template-columns: 1fr 1fr;
 
     .hero-image-container {
-        margin-left: 8rem;
-
+            overflow: hidden;
+            border-radius: 20px; 
+            border: 10px solid rgb(31, 44, 60, 0.5); 
+          
         .hero-image {
-            width: 100%;
-        }
+            width: 100%;                      
+        }        
     }
 
     .hero-description {
         display: grid;
         grid-template-rows: 2fr 2fr 1fr 2fr;
-        justify-items: right;  
+        justify-items: right; 
+        color: $pavement; 
 
         .hero-description-top {
             align-self: flex-end;
@@ -26,7 +27,7 @@
         
         .hero-description-middle {
             font-family: $buttonFont;
-            font-size: 4rem;
+            font-size: 6rem;
             font-weight: light;
             margin: 0;
         }
@@ -37,7 +38,7 @@
 
         .hero-description-bottom {
             align-self: flex-start;  
-            color: $lightGrey;
+            color: $pavement;
             justify-self: flex-end;
             font-family: $linkFont;
             

@@ -1,0 +1,16 @@
+@import "../../styles/colors.scss";
+
+.meicon-container {
+    border-top: 3px solid $teal;
+
+    .face-icon{
+        color: $custard;
+        font-size: 2.5rem;
+        border: 3px solid $teal;
+        border-radius: 50px;
+        padding: 0.5rem;
+        position: relative;
+        bottom: 50px;
+        background-color: $newgrey;        
+    }
+}

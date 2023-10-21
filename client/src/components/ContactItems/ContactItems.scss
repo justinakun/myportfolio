@@ -1,13 +1,16 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
 .contacts-items {
-    color: black;
+    color: $pavement;
 
     .contact-item{
         padding-bottom: 1rem;
         display: flex;
         justify-content: left;
         align-items: center;
+        font-family: $linkFont;
         .icon {
-            font-style: italic;
             font-size: 3rem;
             margin-right: 1rem;
         }    
