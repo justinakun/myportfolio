@@ -9,10 +9,17 @@
         font-family: $buttonFont;
         font-size: 4rem;
         font-weight: light;
-        margin: 0;
 
         h4 {
             text-align: right;
         }
     }
+
+    p {
+        font-family: $linkFont;
+        text-align: right;
+        padding-bottom: 1rem;
+
+    }
+
 }

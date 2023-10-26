@@ -10,18 +10,19 @@ const TinyCard = ({ text, image }) => {
         <MeIcon />
       </div>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id
-        unde deserunt deleniti eius? Animi, accusamus non quas aut doloribus
-        cumque accusantium eaque ex quae itaque. Fugit possimus asperiores
-        officia debitis ullam pariatur aspernatur
+        I embarked on my journey as an aspiring Front-End developer in 2022, and
+        it all began with the completion of Harvard's Introduction to Computer
+        Science course. This pivotal experience marked my first significant step
+        into the world of computing, igniting a deep passion and curiosity
+        within me that continues to grow.
       </p>
-
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ab
-        perferendis distinctio nihil perspiciatis ea beatae itaque,
-        reprehenderit exercitationem vero a porro? Commodi, esse recusandae?
-        <img src="./duck.png" alt="" />
+        After completing the course, I was driven to continue my journey toward
+        becoming a Front-End developer. I successfully completed a dedicated
+        Front-End course, channeling my creativity into various projects. You
+        can explore my portfolio and see my work showcased on this website.
       </p>
+      <p></p>
     </div>
   );
 };

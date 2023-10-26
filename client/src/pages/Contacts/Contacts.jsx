@@ -6,8 +6,8 @@ import "./Contacts.scss";
 const Contacts = () => {
   return (
     <div className="contacts-container">
-      <ContactItems />
       <EmailForm />
+      <ContactItems />
     </div>
   );
 };
