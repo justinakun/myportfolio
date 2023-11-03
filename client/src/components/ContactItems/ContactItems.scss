@@ -10,10 +10,16 @@
         justify-content: left;
         align-items: center;
         font-family: $linkFont;
+        width: 300px;
+
         .icon {
             font-size: 3rem;
             margin-right: 1rem;
         }    
+    }
+        
+    .location {
+        cursor: default;
     }
 
 }

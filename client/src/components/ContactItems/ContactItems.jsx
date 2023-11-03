@@ -7,13 +7,13 @@ import { Link } from "react-router-dom";
 const ContactItems = () => {
   return (
     <div className="contacts-items">
-      <div className="contact-item">
+      <div className="contact-item location">
         <GoLocation className="icon" />
         Vilnius, Lithuania
       </div>
       <div className="contact-item">
         <GoMail className="icon" />
-        <ClipboardText text="justina.kunigonyte@gmail.com" />
+        <ClipboardText text="justina.kunigonyte@gmail.com" className="email" />
       </div>
       <div className="contact-item">
         <FiGithub className="icon" />

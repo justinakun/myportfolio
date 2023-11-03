@@ -31,14 +31,14 @@
     width: 100%;
     height: 100px;
     box-shadow: $shadowone;
-    border-bottom: none;
     border-right: none;
     border-left: none;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1.5fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-color: $newgrey;
+    align-items: center;
 
     .work-item-number-container {
         font-family: $buttonFont;
@@ -104,9 +104,16 @@
         
     &:hover .work-item-more{
         border-width: 3px;
-        border: none;
+        border: 3px solid transparent;
         background-color: $deepcustard;
     }
+}
+
+.work-item:hover {
+    box-shadow: $shadowtwo;
+    border-bottom: inherit;
+    background-color: $newgreylight;
+    
 }
 
 

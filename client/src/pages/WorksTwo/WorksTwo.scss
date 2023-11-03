@@ -14,13 +14,18 @@
         padding: 2rem;
         width: 700px;
         text-align: center;
-    }
-    .works-two-image {
-        justify-self: center;
 
-        img {
-            width: 500px;
-            height: 300px;
+        .github-link {
+            text-decoration:underline;
         }
+        .github-link:hover{
+            color: $deepcustard;
+        }
+    }
+
+    .works-two-comment{
+        padding: 3rem;
+        width: 700px;
+        text-align: center;
     }
 }

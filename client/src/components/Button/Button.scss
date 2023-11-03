@@ -9,7 +9,13 @@
     border: none;
     border-radius: 35px;
     &.contained {
-        background-color:$deepcustard;
+        background-color:$teal;
+        border: 3px solid $pavement;       
+    }
+
+    &.contained:hover {
+        background-color: $deepcustard;
+        border: 3px solid transparent;    
     }
 
     &.outlined {

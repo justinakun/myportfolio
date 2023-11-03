@@ -19,8 +19,16 @@
         justify-self: center;
 
         img {
-            width: 700px;
-            height: 300px;
+            width: 800px;            
+        }
+    }
+    .works-one-comment{
+        padding: 3rem;
+    }
+
+    .works-one-small-image{
+        img {
+            width: 400px;
         }
     }
 }

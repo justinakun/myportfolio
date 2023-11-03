@@ -27,6 +27,10 @@
                 align-self: center;  
                 font-family: $linkFont;      
             }
+
+            .nav-item:hover{
+                color: $deepcustard;
+            }
     
             .dot{
                 font-size: 1.5rem;
