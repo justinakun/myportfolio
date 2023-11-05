@@ -1,0 +1,26 @@
+.works-two-container {
+  padding-bottom: 2rem;
+  background-color: #1f2c3c;
+  color: #EDEAE5;
+  display: grid;
+  justify-items: center;
+}
+.works-two-container .works-two-title {
+  padding: 2rem;
+}
+.works-two-container .works-two-description {
+  padding: 2rem;
+  width: 700px;
+  text-align: center;
+}
+.works-two-container .works-two-description .github-link {
+  text-decoration: underline;
+}
+.works-two-container .works-two-description .github-link:hover {
+  color: #f09e54;
+}
+.works-two-container .works-two-comment {
+  padding: 3rem;
+  width: 700px;
+  text-align: center;
+}/*# sourceMappingURL=WorksTwo.css.map */

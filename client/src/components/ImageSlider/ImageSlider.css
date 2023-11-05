@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=REM:wght@500&display=swap");
+.slider-container {
+  width: 500px;
+  height: 320px;
+  position: "relative";
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  background-color: #026670;
+  border: 3px solid #25262c;
+  border-radius: 15px;
+}
+.slider-container .slider-arrow {
+  top: "50%";
+  font-size: 2.5rem;
+  cursor: pointer;
+  place-self: center center;
+  opacity: 0.3;
+}
+.slider-container .left-slider-arrow {
+  left: "32px";
+}
+.slider-container .right-slider-arrow {
+  right: "32px";
+}
+.slider-container .slide-container {
+  font-family: "REM", sans-serif;
+  color: #000;
+  background-position: "center";
+  background-size: "cover";
+  display: grid;
+  grid-template-rows: 3fr 4fr 3fr;
+}
+.slider-container .slide-container .slide-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider-container .slide-container .slide-heading .slide-year {
+  opacity: 0.3;
+}
+.slider-container .slide-container .slide-content {
+  text-align: right;
+  align-self: center;
+}
+.slider-container .slide-container .slides-lines-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.slider-container .slide-container .slides-lines-container .slides-lines {
+  cursor: pointer;
+  font-size: 40px;
+  opacity: 0.3;
+}
+.slider-container .slide-container .slides-lines-container .current-line {
+  opacity: 10;
+}/*# sourceMappingURL=ImageSlider.css.map */

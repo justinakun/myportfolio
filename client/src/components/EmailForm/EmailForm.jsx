@@ -1,6 +1,7 @@
 import Button from "../../components/Button/Button";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import EmailBird from "../EmailBird/EmailBird";
 import "./EmailForm.scss";
 
 const EmailForm = () => {
@@ -8,8 +9,11 @@ const EmailForm = () => {
   const [nameError, setNameError] = useState("");
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
+  const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [messageError, setMessageError] = useState("");
+  const [sending, setSending] = useState("false");
+  const [sent, setSent] = useState(false);
   const form = useRef();
 
   const validateName = () => {
@@ -89,6 +93,19 @@ const EmailForm = () => {
     e.preventDefault();
 
     if (validateName() && validateEmail() && validateMessage()) {
+      setSending(true);
+
+      // Set 'sent' to true after 4 seconds
+      setTimeout(() => {
+        setSent(true);
+        setSending(false); // Set 'sending' to false when 'sent' becomes true
+      }, 4000); // 4 seconds
+
+      // Reset 'sent' to false after 9 seconds (4 seconds for 'sent' + 5 seconds for 'sent')
+      setTimeout(() => {
+        setSent(false);
+      }, 9000); // 9 seconds
+
       emailjs
         .sendForm(
           import.meta.env.VITE_YOUR_SERVICE_ID,
@@ -99,6 +116,12 @@ const EmailForm = () => {
         .then(
           (result) => {
             console.log(result.text);
+            setName("");
+            setEmail("");
+            setMessage("");
+            setSubject("");
+            setSent(true);
+            setSending(true);
           },
           (error) => {
             console.log(error.text);
@@ -111,43 +134,56 @@ const EmailForm = () => {
   const inputErrorClass = (error) => (error ? "error-border" : "");
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit} ref={form}>
-      <h3 className="get-in-touch">DROP ME A MESSAGE</h3>
-      <input
-        type="text"
-        placeholder="Name*"
-        name="userName"
-        value={name}
-        onChange={handleChange}
-        onBlur={handleBlur}
-        className={inputErrorClass(nameError)} // Apply error class
-      />
-      {nameError !== "" && <span>{nameError}</span>}
+    <div>
+      <div>{sent && <p>email has been sent</p>}</div>
+      <form className="contact-form" onSubmit={handleSubmit} ref={form}>
+        <h3 className="get-in-touch">DROP ME A MESSAGE</h3>
+        <input
+          type="text"
+          placeholder="Name*"
+          name="userName"
+          value={name}
+          onChange={handleChange}
+          onBlur={handleBlur}
+          className={inputErrorClass(nameError)} // Apply error class
+        />
+        {nameError !== "" && <span>{nameError}</span>}
 
-      <input
-        type="text"
-        placeholder="Email*"
-        name="userEmail"
-        value={email}
-        onChange={handleChange}
-        onBlur={handleBlur}
-        className={inputErrorClass(emailError)} // Apply error class
-      />
-      {emailError !== "" && <span>{emailError}</span>}
-      <input type="text" placeholder="Subject" name="subject" />
+        <input
+          type="text"
+          placeholder="Email*"
+          name="userEmail"
+          value={email}
+          onChange={handleChange}
+          onBlur={handleBlur}
+          className={inputErrorClass(emailError)} // Apply error class
+        />
+        {emailError !== "" && <span>{emailError}</span>}
+        <input
+          type="text"
+          placeholder="Subject"
+          name="subject"
+          value={subject}
+          onChange={(e) => setSubject(e.target.value)}
+        />
 
-      <textarea
-        placeholder="Message*"
-        rows="5"
-        name="message"
-        value={message}
-        onChange={handleChange}
-        onBlur={handleBlur}
-        className={inputErrorClass(messageError)} // Apply error class
-      />
-      {messageError !== "" && <span>{messageError}</span>}
-      <Button text="Send" variant="contained" type="submit" />
-    </form>
+        <textarea
+          placeholder="Message*"
+          rows="5"
+          name="message"
+          value={message}
+          onChange={handleChange}
+          onBlur={handleBlur}
+          className={inputErrorClass(messageError)} // Apply error class
+        />
+        {messageError !== "" && <span>{messageError}</span>}
+        {sending === "true" ? (
+          <EmailBird />
+        ) : (
+          <Button text="Send" variant="contained" type="submit" />
+        )}
+      </form>
+    </div>
   );
 };
 

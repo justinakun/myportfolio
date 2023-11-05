@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=REM:wght@500&display=swap");
+.styled-button {
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+  color: #EDEAE5;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 35px;
+}
+.styled-button.contained {
+  background-color: #026670;
+  border: 3px solid #EDEAE5;
+}
+.styled-button.contained:hover {
+  background-color: #f09e54;
+  border: 3px solid transparent;
+}
+.styled-button.outlined {
+  border-color: #7FBAA0;
+  border-width: 3px;
+  border-style: solid;
+  background: transparent;
+}/*# sourceMappingURL=Button.css.map */

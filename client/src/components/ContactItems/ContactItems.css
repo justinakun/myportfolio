@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=REM:wght@500&display=swap");
+.contacts-items {
+  color: #EDEAE5;
+}
+.contacts-items .contact-item {
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-family: "REM", sans-serif;
+  width: 300px;
+}
+.contacts-items .contact-item .icon {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+.contacts-items .location {
+  cursor: default;
+}/*# sourceMappingURL=ContactItems.css.map */

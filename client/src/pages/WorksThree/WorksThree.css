@@ -1,0 +1,32 @@
+.works-three-container {
+  padding-bottom: 2rem;
+  background-color: #1f2c3c;
+  color: #EDEAE5;
+  display: grid;
+  justify-items: center;
+}
+.works-three-container .works-three-title {
+  padding: 2rem;
+}
+.works-three-container .works-three-description {
+  padding: 2rem;
+  width: 700px;
+  text-align: center;
+}
+.works-three-container .works-three-description .github-link {
+  text-decoration: underline;
+}
+.works-three-container .works-three-description .github-link:hover {
+  color: #f09e54;
+}
+.works-three-container .works-three-image {
+  justify-self: center;
+}
+.works-three-container .works-three-image img {
+  width: 800px;
+}
+.works-three-container .works-three-comment {
+  padding: 3rem;
+  width: 700px;
+  text-align: center;
+}/*# sourceMappingURL=WorksThree.css.map */

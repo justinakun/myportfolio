@@ -1,0 +1,27 @@
+.works-one-container {
+  padding-bottom: 2rem;
+  background-color: #1f2c3c;
+  color: #EDEAE5;
+  display: grid;
+  justify-items: center;
+}
+.works-one-container .works-one-title {
+  padding: 2rem;
+}
+.works-one-container .works-one-description {
+  padding: 2rem;
+  width: 700px;
+  text-align: center;
+}
+.works-one-container .works-one-image {
+  justify-self: center;
+}
+.works-one-container .works-one-image img {
+  width: 800px;
+}
+.works-one-container .works-one-comment {
+  padding: 3rem;
+}
+.works-one-container .works-one-small-image img {
+  width: 400px;
+}/*# sourceMappingURL=WorksOne.css.map */

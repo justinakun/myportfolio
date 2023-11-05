@@ -1,0 +1,41 @@
+@import "../../styles/colors.scss";
+
+.works-three-container {
+    padding-bottom: 2rem;
+    background-color: $newgrey;
+    color: $pavement;
+    display: grid;
+    justify-items: center;
+    .works-three-title {
+        padding: 2rem;
+    }
+
+    .works-three-description {
+        padding: 2rem;
+        width: 700px;
+        text-align: center;
+
+        .github-link {
+            text-decoration:underline;
+        }
+        .github-link:hover{
+            color: $deepcustard;
+        }
+    }
+
+    .works-three-image {
+        justify-self: center;
+        
+
+        img {
+            width: 800px;
+            
+        }
+    }
+
+    .works-three-comment{
+        padding: 3rem;
+        width: 700px;
+        text-align: center;
+    }
+}

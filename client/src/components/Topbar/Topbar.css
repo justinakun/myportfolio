@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=REM:wght@500&display=swap");
+.topbar-container {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  align-items: center;
+  padding: 2rem;
+}
+.topbar-container .logo-container {
+  font-family: "REM", sans-serif;
+  font-size: large;
+  color: #EDEAE5;
+}
+.topbar-container .navigation-items {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 2rem;
+}
+.topbar-container .navigation-items .nav-items-div {
+  display: flex;
+  align-content: center;
+}
+.topbar-container .navigation-items .nav-items-div .nav-item {
+  padding-right: 2rem;
+  align-self: center;
+  font-family: "REM", sans-serif;
+}
+.topbar-container .navigation-items .nav-items-div .nav-item:hover {
+  color: #f09e54;
+}
+.topbar-container .navigation-items .nav-items-div .dot {
+  font-size: 1.5rem;
+  color: #EDEAE5;
+  align-self: center;
+}/*# sourceMappingURL=Topbar.css.map */
