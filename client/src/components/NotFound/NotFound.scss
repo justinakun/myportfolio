@@ -1,0 +1,23 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+@import "../../styles/shadows.scss";
+
+
+.not-found-container {
+    color: $pavement;
+    font-family: $linkFont;
+    text-align: center;
+    height: calc(100vh - 170px);
+
+    h1 {
+        padding: 3rem;
+    }
+
+    p {
+        padding: 0 15rem 0 15rem;
+    }
+
+    img {
+        padding: 2rem;
+    }
+}

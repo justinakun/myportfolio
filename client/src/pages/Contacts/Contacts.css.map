@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../styles/fonts.scss","Contacts.scss","../../styles/colors.scss","Contacts.css"],"names":[],"mappings":"AAAQ,oFAAA;AACA,iFAAA;ACGR;EACI,yBCgBM;EDfN,gBAAA;EACA,aAAA;EACA,UAAA;EACA,uBAAA;EACA,mBAAA;AEDJ","file":"Contacts.css"}
+{"version":3,"sources":["../../styles/fonts.scss","Contacts.scss","../../styles/colors.scss","Contacts.css"],"names":[],"mappings":"AAAQ,oFAAA;AACA,iFAAA;AACA,yFAAA;ACER;EACI,yBCgBM;EDfN,gBAAA;EACA,aAAA;EACA,UAAA;EACA,uBAAA;EACA,mBAAA;AEAJ","file":"Contacts.css"}

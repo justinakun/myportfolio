@@ -5,6 +5,7 @@ import WorksOne from "../pages/WorksOne/WorksOne";
 import WorksTwo from "../pages/WorksTwo/WorksTwo";
 import WorksThree from "../pages/WorksThree/WorksThree";
 import WorksFour from "../pages/WorksFour/WorksFour";
+import NotFound from "../components/NotFound/NotFound";
 
 export const unauthenticatedRoutes = [
   {
@@ -34,6 +35,10 @@ export const unauthenticatedRoutes = [
   {
     path: "/works/4",
     Component: WorksFour,
+  },
+  {
+    path: "*",
+    Component: NotFound,
   },
 ];
 
