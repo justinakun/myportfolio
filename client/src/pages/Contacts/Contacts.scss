@@ -4,9 +4,24 @@
 
 .contacts-container {
     background-color: $newgrey;
-    min-height: 88vh;
-    display: flex;
-    gap: 10rem;
-    justify-content: center;
-    align-items: center;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    min-height: 100vh;
+    gap: 3rem;
+
+    .email-items-container {
+        justify-self: end;
+    }
+ 
+    .contact-items-container {
+        justify-self: start;
+        display: flex-box;
+        
+        .mail-bird {
+            width: 250px;
+            height: 200px;
+        }
+    
+    }
+    }

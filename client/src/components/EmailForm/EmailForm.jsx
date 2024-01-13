@@ -1,8 +1,8 @@
 import Button from "../../components/Button/Button";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import EmailBird from "../EmailBird/EmailBird";
 import "./EmailForm.scss";
+import Alert from "../Alert/Alert";
 
 const EmailForm = () => {
   const [name, setName] = useState("");
@@ -12,7 +12,6 @@ const EmailForm = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [messageError, setMessageError] = useState("");
-  const [sending, setSending] = useState("false");
   const [sent, setSent] = useState(false);
   const form = useRef();
 
@@ -93,18 +92,11 @@ const EmailForm = () => {
     e.preventDefault();
 
     if (validateName() && validateEmail() && validateMessage()) {
-      setSending(true);
+      setSent(true);
 
-      // Set 'sent' to true after 4 seconds
-      setTimeout(() => {
-        setSent(true);
-        setSending(false); // Set 'sending' to false when 'sent' becomes true
-      }, 4000); // 4 seconds
-
-      // Reset 'sent' to false after 9 seconds (4 seconds for 'sent' + 5 seconds for 'sent')
       setTimeout(() => {
         setSent(false);
-      }, 9000); // 9 seconds
+      }, 5000);
 
       emailjs
         .sendForm(
@@ -121,7 +113,6 @@ const EmailForm = () => {
             setMessage("");
             setSubject("");
             setSent(true);
-            setSending(true);
           },
           (error) => {
             console.log(error.text);
@@ -135,7 +126,15 @@ const EmailForm = () => {
 
   return (
     <div>
-      <div>{sent && <p>email has been sent</p>}</div>
+      <div className="alert-success-container">
+        {sent && (
+          <Alert
+            message="Your message has been delivered."
+            variant="success"
+            title="Success!"
+          />
+        )}
+      </div>
       <form className="contact-form" onSubmit={handleSubmit} ref={form}>
         <h3 className="get-in-touch">DROP ME A MESSAGE</h3>
         <input
@@ -177,11 +176,7 @@ const EmailForm = () => {
           className={inputErrorClass(messageError)} // Apply error class
         />
         {messageError !== "" && <span>{messageError}</span>}
-        {sending === "true" ? (
-          <EmailBird />
-        ) : (
-          <Button text="Send" variant="contained" type="submit" />
-        )}
+        <Button text="Send" variant="contained" type="submit" />
       </form>
     </div>
   );

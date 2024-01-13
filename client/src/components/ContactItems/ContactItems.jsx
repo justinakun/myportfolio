@@ -3,21 +3,36 @@ import { FiGithub } from "react-icons/fi";
 import ClipboardText from "../ClipboardText/ClipboardText";
 import "./ContactItems.scss";
 import { Link } from "react-router-dom";
+import Map from "../Map/Map";
+import { useState } from "react";
 
 const ContactItems = () => {
+  const [mapIsHovered, setIsHovered] = useState(false);
+  const cityCoords = [54.687157, 25.279652];
+
   return (
     <div className="contacts-items">
-      <div className="contact-item location">
+      <div
+        className="contact-item location"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        {mapIsHovered && <Map coords={cityCoords} />}
         <GoLocation className="icon" />
         Vilnius, Lithuania
       </div>
-      <div className="contact-item">
+      <div className="contact-item contact-item-email">
         <GoMail className="icon" />
         <ClipboardText text="justina.kunigonyte@gmail.com" className="email" />
       </div>
-      <div className="contact-item">
+      <div className="contact-item contact-item-link">
         <FiGithub className="icon" />
-        <Link to="https://github.com/justinakun">github.com/justinakun</Link>
+        <Link
+          to="https://github.com/justinakun"
+          title="Check out all code on GitHub"
+        >
+          github.com/justinakun
+        </Link>
       </div>
     </div>
   );
