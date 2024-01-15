@@ -2,7 +2,7 @@ import Button from "../../components/Button/Button";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./EmailForm.scss";
-import Alert from "../Alert/Alert";
+import Alert from "@mui/material/Alert";
 
 const EmailForm = () => {
   const [name, setName] = useState("");
@@ -128,11 +128,9 @@ const EmailForm = () => {
     <div>
       <div className="alert-success-container">
         {sent && (
-          <Alert
-            message="Your message has been delivered."
-            variant="success"
-            title="Success!"
-          />
+          <Alert severity="success" variant="filled" className="success-alert">
+            Success! Your message has been delivered
+          </Alert>
         )}
       </div>
       <form className="contact-form" onSubmit={handleSubmit} ref={form}>

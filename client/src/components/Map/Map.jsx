@@ -10,10 +10,7 @@ const Map = ({ coords }) => {
       className="Map"
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      <Marker position={coords}>
-        <icon />
-        <iconShadow />
-      </Marker>
+      <Marker position={coords}></Marker>
     </MapContainer>
   );
 };
