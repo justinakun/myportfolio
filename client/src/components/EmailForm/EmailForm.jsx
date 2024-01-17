@@ -137,7 +137,7 @@ const EmailForm = () => {
         <h3 className="get-in-touch">DROP ME A MESSAGE</h3>
         <input
           type="text"
-          placeholder="Name*"
+          placeholder="Your name*"
           name="userName"
           value={name}
           onChange={handleChange}
@@ -148,7 +148,7 @@ const EmailForm = () => {
 
         <input
           type="text"
-          placeholder="Email*"
+          placeholder="Your email*"
           name="userEmail"
           value={email}
           onChange={handleChange}

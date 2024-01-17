@@ -26,4 +26,18 @@
         position: static;
     }
 
+    .contact-item-email:hover{   
+            color: $deepcustard;   
+    }
+
+    .contact-item {
+        &:hover {
+            .icon, 
+            .contact-item-link {
+                color: $deepcustard;
+            }
+        }
+    }
+    
+
 }

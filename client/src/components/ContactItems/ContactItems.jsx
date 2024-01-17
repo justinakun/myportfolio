@@ -28,6 +28,7 @@ const ContactItems = () => {
       <div className="contact-item contact-item-link">
         <FiGithub className="icon" />
         <Link
+          className="contact-item-link"
           to="https://github.com/justinakun"
           title="Check out all code on GitHub"
         >

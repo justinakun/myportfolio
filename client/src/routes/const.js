@@ -17,7 +17,7 @@ export const unauthenticatedRoutes = [
     Component: Works,
   },
   {
-    path: "/contacts",
+    path: "/contact",
     Component: Contacts,
   },
   {
@@ -45,5 +45,5 @@ export const unauthenticatedRoutes = [
 export const topbarNavigationItems = [
   { route: "/", title: "Main" },
   { route: "/works", title: "Works" },
-  { route: "/contacts", title: "Contact" },
+  { route: "/contact", title: "Contact" },
 ];
