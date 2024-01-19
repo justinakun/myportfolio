@@ -16,7 +16,7 @@ const Hero = () => {
         </div>
         <div className="hero-description-bottom">
           <div className="hero-bottom">
-            I'm an aspiring web developer. See my work or contact me!
+            Explore my portfolio, discover my skills, and connect with me!
           </div>
         </div>
       </div>
