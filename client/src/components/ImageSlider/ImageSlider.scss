@@ -1,22 +1,28 @@
 @import "../../styles/colors.scss";
 @import "../../styles/fonts.scss";
+@import "../../styles/shadows.scss";
 
 .slider-container {
     width: 500px;
-    height: 320px;
+    height: 350px;
     position: "relative";
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    background-color: $teal;
-    border: 3px solid $lighViolet;
+    background-color: $newgreylight;
     border-radius: 15px;
-
+    box-shadow: $shadowtwo; 
+    cursor: default;
+ 
     .slider-arrow {
         top: "50%";
         font-size: 2.5rem;
         cursor: pointer;  
         place-self: center center;
         opacity: 0.3;
+    }
+
+    .slider-arrow:hover {
+        opacity: 1;
     }
 
     .left-slider-arrow {        
@@ -29,14 +35,12 @@
 
     .slide-container {
         font-family: $linkFont;
-        color: $textMain;
+        color: $pavement;
         background-position: "center";
         background-size: "cover";
         display: grid;
         grid-template-rows: 3fr 4fr 3fr;
-
-        // background-color: `${slides[currentIndex].backgroundColor}`;
-    
+  
         .slide-heading {
             display: flex;
             justify-content: space-between;

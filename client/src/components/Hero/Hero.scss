@@ -5,13 +5,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    .hero-image-container {
-            overflow: hidden;
-            border-radius: 20px; 
-            border: 10px solid rgb(31, 44, 60, 0.5); 
+    .hero-image-container {           
           
         .hero-image {
-            width: 90%;                      
+            width: 550px;
+            height: 450px;
+            border-radius: 20px; 
+            border: 10px solid rgb(31, 44, 60, 0.5);                      
         }        
     }
 

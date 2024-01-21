@@ -7,7 +7,6 @@ import CVModal from "../CVModal/CVModal";
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [autoSlideEnabled, setAutoSlideEnabled] = useState(true);
-  const [cvClicked, setCvClicked] = useState(false);
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -23,16 +22,6 @@ const ImageSlider = ({ slides }) => {
 
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
-  };
-
-  const handleCvOn = () => {
-    setCvClicked(true);
-    stopAutoSlide();
-  };
-
-  const handleCvOff = () => {
-    setCvClicked(false);
-    restartAutoSlide();
   };
 
   // Function to stop the automatic sliding
@@ -68,14 +57,7 @@ const ImageSlider = ({ slides }) => {
           <h1 className="slide-year">{slides[currentIndex].year}</h1>
           <h1 className="slide-title">{slides[currentIndex].title}</h1>
         </div>
-        <div className="slide-content">
-          {slides[currentIndex].content}
-          {slides[currentIndex].cvmodal && (
-            <div onClick={handleCvOn}>
-              <CVModal />
-            </div>
-          )}
-        </div>
+        <div className="slide-content">{slides[currentIndex].content}</div>
         <div className="slides-lines-container">
           {slides.map((slide, slideIndex) => (
             <div

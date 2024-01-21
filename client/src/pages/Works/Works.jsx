@@ -13,19 +13,19 @@ const Works = () => {
       <WorkItem
         title="NFTLanding"
         number={1}
-        description="A final design project after completing 2 months of learning"
+        description="A responsive design project completed as part of the learning journey"
         skills={[<HtmlIcon key="html-icon" />, <CssIcon key="css-icon" />]}
       />
       <WorkItem
         title="Fun w/ Flags"
         number={2}
-        description="A simple project to learn flags from all over the world"
+        description="An engaging project aimed at enhancing knowledge of various flags from across the world"
         skills={[<ReactIcon key="react-icon" />, <CssIcon key="css-icon" />]}
       />
       <WorkItem
         title="Chat Away"
         number={3}
-        description="A final full-stack project after completing 7 months of learning"
+        description="Completing a seven-month educational journey, this full-stack project is a forum built to showcase the skills and knowledge acquired"
         skills={[
           <ReactIcon key="react-icon" />,
           <NodeIcon key="node-icon" />,
@@ -36,7 +36,7 @@ const Works = () => {
       <WorkItem
         title="Portfolio"
         number={4}
-        description="A portfolio project to keep all of my works"
+        description="A comprehensive portfolio project designed display my collection of work"
         skills={[<ReactIcon key="react-icon" />, <ScssIcon key="scss-icon" />]}
       />
     </div>

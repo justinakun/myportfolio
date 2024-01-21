@@ -1,28 +1,37 @@
 @import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
 
 .main-container {
     margin: 0 3rem 3rem 3rem;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-
-    .me-essay {
-        line-height: 130%;
-        display: grid;
-        align-items: center;
-    
-        .me-essay-bit {
-            border: 3px solid black;
-            display: grid;
-            grid-template-columns: 3fr 1fr;
-        }
-
-    }
+    color: $pavement;
+    cursor: default;
     
     .container-slides {
+        padding-bottom: 1.3rem;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        justify-items: stretch;
         align-items: center;
-        justify-items: center;
+        font-family: $buttonFont;
+
+        .container-slides-title {
+            padding-bottom: 3rem;
+            font-size: 3rem;
+            justify-self: center;
+        }
+
+        .bubble-and-slider {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+
+            .image-slider-main {
+                justify-self: end;
+            }
+
+
+        }        
     }
 }
 

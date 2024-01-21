@@ -1,9 +1,10 @@
 @import "../../styles/fonts.scss";
 @import "../../styles/colors.scss";
+@import "../../styles/shadows.scss";
 
 .topbar-container {
     display: grid;
-    grid-template-columns: 2fr 6fr;
+    grid-template-columns: 1.2fr 6fr;
     align-items: center;
     padding: 2rem;
 
@@ -13,6 +14,11 @@
         font-weight: bold;
         color: $pavement;
         cursor: default;
+    }
+
+    .logo-container:hover {
+        cursor: pointer;
+        color: $custard;
     }
 
     .navigation-items{ 
@@ -44,3 +50,57 @@
 
     }
 }
+
+@media screen and (max-width: 768px) {
+    .topbar-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        justify-items: center;
+
+        .logo-container {
+            padding: 2rem;
+        }
+
+        .navigation-items {
+            padding-right: 0px;
+
+            .nav-item:last-child {
+                padding-right: 0rem;
+            }
+        }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+
+    .topbar-container {
+
+        .logo-container {
+            text-align: center;
+        }
+
+        .navigation-items {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+
+            .nav-items-div {
+                display: grid;
+                justify-items: center;
+
+                .nav-item {
+                    justify-items: center;
+                    padding-right: 0px;
+                    padding-bottom: 2rem;
+                }
+
+            }
+
+        }
+
+    }
+
+
+
+  }
