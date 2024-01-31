@@ -25,14 +25,6 @@
         opacity: 1;
     }
 
-    .left-slider-arrow {        
-        left: "32px";       
-    }
-
-    .right-slider-arrow {
-        right: "32px";   
-    }
-
     .slide-container {
         font-family: $linkFont;
         color: $pavement;
@@ -72,5 +64,31 @@
                 opacity: 10;
             }
         }
+}
+}
+
+@media screen and (max-width: 640px){
+    .slider-container {
+        width: 390px;
+        height: 350px;
+
+        .slider-arrow {
+            font-size: 1.5rem;
+        }
+
+        .slide-container {
+            // grid-template-rows: auto;
+
+            .slide-heading{
+                .slide-year,
+                .slide-title{
+                    font-size: 1.5rem;
+                }
+            }
+
+            .slide-content{
+                font-size: 0.9rem;
+            }
+    }
 }
 }

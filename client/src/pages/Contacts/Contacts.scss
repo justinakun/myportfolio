@@ -26,3 +26,38 @@
     
     }
     }
+
+    @media screen and (max-width: 900px){
+        .contacts-container {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            margin: 0;
+            row-gap: 5rem;
+            padding-bottom: 3rem;
+
+            .email-items-container {
+                justify-self: center;
+            }
+
+            .contact-items-container {
+                justify-self: center;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-items: center;
+                gap: 3rem;
+            }
+            
+        }
+    }
+
+    @media screen and (max-width: 700px){
+        .contacts-container{
+            .contact-items-container{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+
+        }
+
+    }

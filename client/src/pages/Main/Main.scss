@@ -29,9 +29,32 @@
             .image-slider-main {
                 justify-self: end;
             }
-
-
         }        
     }
+}
+
+@media screen and (max-width: 640px){
+    .main-container {
+
+        .container-slides{ 
+            padding-top: 4rem;
+            .container-slides-title{
+                font-size: 2rem;
+
+            } 
+            .bubble-and-slider{
+                grid-template-columns: 1fr;
+                row-gap: 4rem;
+                .image-slider-main {
+                    justify-self: center;
+                }
+
+            }        
+
+        }
+
+        
+    }
+
 }
 

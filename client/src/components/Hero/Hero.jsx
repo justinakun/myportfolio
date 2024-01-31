@@ -15,9 +15,7 @@ const Hero = () => {
           <Beads />
         </div>
         <div className="hero-description-bottom">
-          <div className="hero-bottom">
-            Explore my portfolio, discover my skills, and connect with me!
-          </div>
+          Explore my portfolio, discover my skills, and connect with me!
         </div>
       </div>
     </div>

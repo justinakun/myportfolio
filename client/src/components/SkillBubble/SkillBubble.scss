@@ -7,8 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
-    font-size: 1.2rem;
-    
+    font-size: 1.2rem;    
 
     .single-bubble-container{
         width: 40px;
@@ -21,7 +20,6 @@
             border-left: 1px dotted white;
             border-width: thick;       
             height: 130px;
-            font-size: 6rem;
             margin-top: 0.5rem;
         }
     
@@ -62,7 +60,29 @@
             background-color: $react;
         }
 
-    }
+    }    
+}
 
-    
+@media screen and (max-width: 640px){
+    .skill-bubble-container{
+        font-size: 1rem;
+
+        .single-bubble-container{
+            border: 2px solid green;
+            .skill-text {
+                transform: rotate(-45deg);
+                transform-origin: left top;
+                white-space: nowrap;
+                }
+            .bubble-puncture{
+                height: 70px;
+            }
+
+            .bubble-icon{
+                height: 15px;
+                width: 15px;
+            }
+
+        }
+    }
 }

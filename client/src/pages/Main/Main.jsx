@@ -1,7 +1,6 @@
 import Hero from "../../components/Hero/Hero";
 import ImageSlider from "../../components/ImageSlider/ImageSlider";
 import "./Main.scss";
-import CVModal from "../../components/CVModal/CVModal";
 import SkillBubble from "../../components/SkillBubble/SkillBubble";
 
 const Main = () => {
@@ -12,7 +11,6 @@ const Main = () => {
         "In 2022 I completed Harvard University's introduction to computer science course. I learned how to think algorithmically and solve problems efficiently. Languages included C, Python, SQL, and JavaScript plus CSS and HTML.",
       title: "CS50x",
       backgroundColor: "orange",
-      image: "./duck.png",
     },
     {
       year: "2023",

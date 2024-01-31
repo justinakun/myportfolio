@@ -41,11 +41,47 @@
             color: $pavement;
             justify-self: flex-end;
             font-family: $linkFont;
+            justify-items: center;
+            width: 250px;
+            text-align: end;
+        }
+    }
+}
+
+@media screen and (max-width: 640px){
+    .hero-container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        .hero-image-container {
             
-            .hero-bottom {
-                width: 250px;
-                text-align: end;
+            .hero-image {
+                width: 350px;
+                height: 250px;
             }
+        }
+
+        .hero-description {
+            grid-template-rows: auto;
+            justify-items: center;
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+
+            .hero-description-middle{
+                font-size: 4rem;
+            }
+
+            .hero-description-bottom{
+                text-align: center;
+                justify-self: center;
+                width: 300px;
+            }
+
+            .hero-beads {
+                padding-top: 3rem;
+                padding-bottom: 1rem;
+            }
+
         }
     }
 }

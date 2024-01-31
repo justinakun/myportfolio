@@ -11,7 +11,7 @@ const Works = () => {
   return (
     <div className="works-container">
       <WorkItem
-        title="NFTLanding"
+        title="NFT Landing"
         number={1}
         description="A responsive design project completed as part of the learning journey"
         skills={[<HtmlIcon key="html-icon" />, <CssIcon key="css-icon" />]}

@@ -28,7 +28,7 @@
 .work-item {
     color: $pavement;
     width: 100%;
-    height: 100%;
+    height: 125px;
     box-shadow: $shadowone;
     border-right: none;
     border-left: none;
@@ -37,11 +37,13 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-color: $newgrey;
+    align-items: center;
 
     .work-item-first {
         font-family: $buttonFont;
         font-size: large;
         display: flex;
+        align-items: center;
         gap: 3rem;
         padding-left: 3rem;
  
@@ -52,8 +54,13 @@
         
         .work-item-title {
             font-family: $buttonFont;
-            font-size: 4.5vw;
+            font-size: 4rem;
             font-weight: light;
+            line-height: 100%;
+            align-self: center;
+            position: relative;
+            transform: translateY(-15%);
+            
         }
     }
 
@@ -61,9 +68,10 @@
         line-height: 1.5;
         display: flex;
         align-items: center;
+        justify-content: left;
         font-family: $linkFont;
-        padding-right: 2.5rem;
-        padding-left: 1rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
 }
 
     .work-item-third {
@@ -71,27 +79,41 @@
         grid-template-columns: 2fr 1fr;
         align-items: center;
         justify-content:flex-start;
+        gap: 2rem;
 
         .work-item-skills{
             display: grid;
+            align-items: center;
+            column-gap: 1rem;
             grid-template-columns: 1fr 1fr;
          }
 
-         .work-item-more {
+         .work-item-button{
+            padding-left: 1rem;
+            padding-right: 3rem;
+            justify-self: start;
             align-self: center;
-            border:3px solid $pavement;
-            border-radius: 40px;
-            width: 70px;
-            height: 70px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 3px;
+
+            .work-item-more {
+                align-self: center;
+                border:3px solid $pavement;
+                border-radius: 40px;
+                width: 70px;
+                height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 3px;
+        
+                  .more-icon {            
+                    font-size: 2rem;
     
-              .more-icon {            
-                font-size: 2rem;
+                }
             }
-        }
+
+         }
+
+         
     } 
 
     &:hover .more-icon {
@@ -114,15 +136,17 @@
     
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
     .work-item {
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
+        height: 100%;
 
         .work-item-first {
             padding-left: 0;
+
         }
 
         .work-item-second {

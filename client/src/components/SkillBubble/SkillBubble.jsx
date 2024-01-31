@@ -29,7 +29,7 @@ const SkillBubble = () => {
         const IconComponent = skillIcons[skill];
         return (
           <div className="single-bubble-container" key={skill}>
-            <h5>{skill}</h5>
+            <h5 className="skill-text">{skill}</h5>
             <div className="bubble-puncture"></div>
             <IconComponent
               className={`bubble-icon bubble-${skill.toLowerCase()}`}
