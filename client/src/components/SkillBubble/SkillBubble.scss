@@ -10,7 +10,6 @@
     font-size: 1.2rem;    
 
     .single-bubble-container{
-        width: 40px;
         display: grid;
         justify-items: center;
         align-items: stretch;
@@ -63,26 +62,60 @@
     }    
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 599px){
     .skill-bubble-container{
         font-size: 1rem;
 
         .single-bubble-container{
-            border: 2px solid green;
-            .skill-text {
-                transform: rotate(-45deg);
-                transform-origin: left top;
-                white-space: nowrap;
-                }
             .bubble-puncture{
                 height: 70px;
             }
 
             .bubble-icon{
-                height: 15px;
-                width: 15px;
+                height: 30px;
+                width: 30px;
+                padding: 0.5rem;
+                font-size: 44px;
             }
 
         }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px){
+    .skill-bubble-container{
+
+        .single-bubble-container{
+            .bubble-puncture{
+                height: 100px;
+            }
+
+            .bubble-icon{
+                height: 34px;
+                width: 34px;
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .skill-bubble-container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1210px){
+    .skill-bubble-container{
+        .single-bubble-container{
+            .bubble-icon{
+                height: 25px; 
+                width: 25px; 
+                padding: 0.7rem;          
+            }
+        }
+        
     }
 }
