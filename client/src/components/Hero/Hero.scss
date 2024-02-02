@@ -48,7 +48,7 @@
     }
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 599px){
     .hero-container{
         grid-template-columns: 1fr;
         justify-items: center;
@@ -85,3 +85,104 @@
         }
     }
 }
+
+@media screen and (min-width: 600px) and (max-width: 767px){
+    .hero-container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        .hero-image-container {
+            .hero-image{
+                width: 450px;
+                height: 350px;
+            }
+        }
+
+        .hero-description {
+            grid-template-rows: auto;
+            justify-items: center;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+
+            .hero-description-middle{
+                font-size: 5rem;
+                padding-bottom: 4rem;
+            }
+
+            .hero-beads {
+                padding-bottom: 1.5rem;
+            }
+
+            .hero-description-bottom{
+                text-align: center;
+                justify-self: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .hero-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        .hero-image-container {
+            .hero-image{
+                width: 480px;
+                height: 380px;
+            }
+        }
+
+        .hero-description {
+            grid-template-rows: auto;
+            justify-items: center;
+            padding-top: 3rem;
+            padding-bottom: 6rem;
+
+            .hero-description-middle{
+                font-size: 5rem;
+            }
+
+            .hero-description-bottom{
+                text-align: center;
+                justify-self: center;
+                width: 350px;
+            }
+
+            .hero-beads {
+                padding-top: 3rem;
+                padding-bottom: 1rem;
+            }
+
+        }
+        
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1250px){
+    .hero-container{
+        padding-bottom: 6rem;
+        .hero-image-container{
+            .hero-image{
+                width: 450px;
+                height: 380px;
+            }
+        }
+
+        .hero-description {
+            grid-template-rows: auto;
+            padding-top: 2rem;
+
+            .hero-description-middle{
+                font-size: 4.5rem;
+                text-align: end;
+            }
+
+            .hero-beads {
+                padding-bottom: 1rem;
+            }
+
+        }
+    }
+}
+
