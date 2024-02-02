@@ -2,7 +2,7 @@
 @import "../../styles/fonts.scss";
 
 .main-container {
-    margin: 0 3rem 3rem 3rem;
+    margin: 0 3rem;
     display: grid;
     color: $pavement;
     cursor: default;
@@ -13,89 +13,57 @@
         justify-items: stretch;
         align-items: center;
         font-family: $buttonFont;
+        padding-top: 4rem; // Mobile padding top
 
         .container-slides-title {
             padding-bottom: 3rem;
-            font-size: 3rem;
+            font-size: 2rem; // Mobile font size
             justify-self: center;
         }
 
         .bubble-and-slider {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
+            grid-template-columns: 1fr; // Mobile single column
+            gap: 2rem; // Adjust as needed for mobile
             align-items: center;
+            row-gap: 4rem; // Increased gap for mobile layout
 
             .image-slider-main {
-                justify-self: end;
+                justify-self: center; // Centered for mobile
             }
         }        
     }
 }
 
-@media screen and (max-width: 599px){
+// Media queries for progressively larger screens
+@media screen and (min-width: 600px) {
     .main-container {
+        margin: 0 3rem; // Adjust margin if necessary
 
-        .container-slides{ 
-            padding-top: 4rem;
-            .container-slides-title{
-                font-size: 2rem;
-
-            } 
-            .bubble-and-slider{
-                grid-template-columns: 1fr;
-                row-gap: 4rem;
-                .image-slider-main {
-                    justify-self: center;
-                }
-            }   
-        }        
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width: 767px){
-    .main-container {
-
-        .container-slides{ 
-            padding-top: 4rem;
-            .container-slides-title{
-                font-size: 3rem;
-
-            } 
-            .bubble-and-slider{
-                grid-template-columns: 1fr;
-                row-gap: 4rem;
-                .image-slider-main {
-                    justify-self: center;
-                }
-            }   
-        }        
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px){
-    .main-container {
-        .container-slides{
-        .bubble-and-slider{
-            grid-template-columns: 1fr;
-            .image-slider-main {
-                justify-self: center;
+        .container-slides {
+            .container-slides-title {
+                font-size: 3rem; // Adjusted font size for larger screens
+            }
+            .bubble-and-slider {
+                grid-template-columns: 1fr; // Adjust layout as needed for this breakpoint
             }
         }
     }
 }
-}
 
-@media screen and (min-width: 992px) and (max-width: 1210px){
+@media screen and (min-width: 768px) {
     .main-container {
-        .container-slides{
-        .bubble-and-slider{
-            .image-slider-main {
-                justify-self: center;
+        .container-slides {
+            .bubble-and-slider {
+                grid-template-columns: 1fr 1fr; // Two-column layout for larger screens
+                gap: 2rem; // Adjust gap as needed
+                .image-slider-main {
+                    justify-self: end; // Align to end for larger screens
+                }
             }
         }
     }
 }
-   
-}
+
+// Add additional media queries as needed for larger breakpoints
 

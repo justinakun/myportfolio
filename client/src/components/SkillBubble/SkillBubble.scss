@@ -5,9 +5,9 @@
 .skill-bubble-container {
     cursor: default;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr); // Opt for a simpler layout on mobile
     align-items: center;
-    font-size: 1.2rem;    
+    font-size: 1rem; // Start with a smaller font size for mobile
 
     .single-bubble-container{
         display: grid;
@@ -18,104 +18,71 @@
         .bubble-puncture {
             border-left: 1px dotted white;
             border-width: thick;       
-            height: 130px;
+            height: 70px; // Adjust for mobile
             margin-top: 0.5rem;
         }
     
         .bubble-icon {
-            height: 40px;
-            width: 40px;
+            height: 30px; // Adjust for mobile
+            width: 30px; // Adjust for mobile
             border: 1px solid transparent;  
             border-radius: 50px;    
-            padding: 1rem;
+            padding: 0.5rem; // Adjust padding for mobile
             box-shadow: $shadowthree;
         }
 
-        .bubble-html{
-            background-color: $html;
-        }
-
-        .bubble-css{
-            background-color: $css;
-        }
-        
-        .bubble-scss {
-            background-color: $scss;
-        }
-
-        .bubble-javascript {
-            background-color: $javascript;
-        }
-
-        .bubble-node{
-            background-color: $node;
-        }
-
-        .bubble-mongodb {
-            background-color: $mongo;
-        }
-
-        .bubble-react {
-            background-color: $react;
-        }
-
+        // Bubble color classes remain the same
+        .bubble-html { background-color: $html; }
+        .bubble-css { background-color: $css; }
+        .bubble-scss { background-color: $scss; }
+        .bubble-javascript { background-color: $javascript; }
+        .bubble-node { background-color: $node; }
+        .bubble-mongodb { background-color: $mongo; }
+        .bubble-react { background-color: $react; }
     }    
 }
 
-@media screen and (max-width: 599px){
-    .skill-bubble-container{
-        font-size: 1rem;
+// Adjustments for tablets and intermediate screens
+@media screen and (min-width: 600px) {
+    .skill-bubble-container {
+        grid-template-columns: repeat(4, 1fr); // Increase columns for larger screens
+        font-size: 1.1rem; // Slightly larger font size
 
-        .single-bubble-container{
-            .bubble-puncture{
-                height: 70px;
+        .single-bubble-container {
+            .bubble-puncture {
+                height: 100px; // Adjust height for larger displays
             }
 
-            .bubble-icon{
-                height: 30px;
-                width: 30px;
-                padding: 0.5rem;
-                font-size: 44px;
+            .bubble-icon {
+                height: 34px; // Adjust size for intermediate screens
+                width: 34px; // Adjust size for intermediate screens
             }
-
         }
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 767px){
-    .skill-bubble-container{
-
-        .single-bubble-container{
-            .bubble-puncture{
-                height: 100px;
-            }
-
-            .bubble-icon{
-                height: 34px;
-                width: 34px;
-            }
-        }
-        
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px){
-    .skill-bubble-container{
+// Larger tablet to small desktop adjustments
+@media screen and (min-width: 768px) {
+    .skill-bubble-container {
+        grid-template-columns: repeat(5, 1fr); // Increase column count for larger displays
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 3rem;
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1210px){
-    .skill-bubble-container{
-        .single-bubble-container{
-            .bubble-icon{
-                height: 25px; 
-                width: 25px; 
-                padding: 0.7rem;          
+// Desktop adjustments
+@media screen and (min-width: 992px) {
+    .skill-bubble-container {
+        grid-template-columns: repeat(7, 1fr); // Original column layout for larger screens
+        font-size: 1.2rem; // Revert to original font size
+
+        .single-bubble-container {
+            .bubble-icon {
+                height: 40px; // Revert to original size
+                width: 40px; // Revert to original size
+                padding: 1rem; // Revert to original padding
             }
         }
-        
     }
 }

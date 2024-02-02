@@ -3,21 +3,22 @@
 @import "../../styles/shadows.scss";
 
 .slider-container {
-    width: 500px;
-    height: 350px;
-    position: "relative";
+    width: 100%; // Make width responsive to screen size, starting with full width for mobile
+    max-width: 390px; // Set a max-width for mobile devices
+    height: 350px; // Maintain height across devices
+    position: relative; // Correct the syntax for CSS properties
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr; // Adjust as necessary for mobile, but may keep for simplicity
     background-color: $newgreylight;
     border-radius: 15px;
     box-shadow: $shadowtwo; 
     cursor: default;
- 
+
     .slider-arrow {
-        top: "50%";
-        font-size: 2.5rem;
-        cursor: pointer;  
-        place-self: center center;
+        top: 50%; // Correct the syntax for CSS values
+        font-size: 1.5rem; // Adjust font size for mobile
+        cursor: pointer;
+        place-self: center;
         opacity: 0.3;
     }
 
@@ -28,24 +29,26 @@
     .slide-container {
         font-family: $linkFont;
         color: $pavement;
-        background-position: "center";
-        background-size: "cover";
+        background-position: center; // Correct the syntax for CSS values
+        background-size: cover; // Correct the syntax for CSS values
         display: grid;
-        grid-template-rows: 3fr 4fr 3fr;
-  
+        grid-template-rows: 3fr 4fr 3fr; // Adjusted if necessary for mobile content
+
         .slide-heading {
             display: flex;
             justify-content: space-between;
             align-items: center;
 
-            .slide-year {
+            .slide-year, .slide-title {
                 opacity: 0.3;
+                font-size: 1.5rem; // Adjust font size for mobile
             }
         }  
 
         .slide-content {        
             text-align: right;
             align-self: center;
+            font-size: 0.9rem; // Adjust font size for mobile
         }
 
         .slides-lines-container {
@@ -56,46 +59,48 @@
 
             .slides-lines {
                 cursor: pointer;
-                font-size: 40px;
+                font-size: 40px; // Keep or adjust as needed for mobile
                 opacity: 0.3;               
             }
 
             .current-line {
-                opacity: 10;
+                opacity: 1; // Correct the value for opacity
             }
         }
-}
+    }
 }
 
-@media screen and (max-width: 599px){
+// Adjustments for tablets and larger mobile devices
+@media screen and (min-width: 600px) {
     .slider-container {
-        width: 390px;
-        height: 350px;
-
-        .slider-arrow {
-            font-size: 1.5rem;
-        }
-
-        .slide-container {
-            // grid-template-rows: auto;
-
-            .slide-heading{
-                .slide-year,
-                .slide-title{
-                    font-size: 1.5rem;
-                }
-            }
-
-            .slide-content{
-                font-size: 0.9rem;
-            }
-    }
-}
-}
-
-@media screen and (min-width: 992px) and (max-width: 1210px){
-    .slider-container{
-        width: 450px;
+        width: 100%; // Use 100% width for flexibility
+        max-width: 500px; // Increase max-width for larger devices
     }
 
+    .slider-arrow {
+        font-size: 2rem; // Slightly increase font size
+    }
+
+    .slide-heading .slide-year, .slide-heading .slide-title {
+        font-size: 2rem; // Increase font size for readability
+    }
+
+    .slide-content {
+        font-size: 1.1rem; // Adjust font size for readability
+    }
+}
+
+// Adjustments for desktops and larger screens
+@media screen and (min-width: 992px) {
+    .slider-container {
+        max-width: 450px; // Adjust width for small desktops
+        // Consider adding more specific styling adjustments for desktops here
+    }
+}
+
+@media screen and (min-width: 1210px) {
+    .slider-container {
+        max-width: 500px; // Adjust width for larger desktops
+        // Additional desktop-specific styles could be added here
+    }
 }
