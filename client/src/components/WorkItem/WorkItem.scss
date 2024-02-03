@@ -2,27 +2,13 @@
 @import "../../styles/colors.scss";
 @import "../../styles/shadows.scss";
 
-@keyframes moveForward {
-    0% {
-        transform: translateX(-20px);
-        opacity: 0;
-        z-index: -1;
+@keyframes pulsate {
+    0%, 100% {
+        transform: scale(1); 
     }
-    20% {
-        transform: translateX(-15px);
-        opacity: 1;
-        z-index: 1;
-    }
-    90% {
-        transform: translateX(10px);
-        opacity: 1;
-        z-index: 1;
-    }
-    100% {
-        transform: translateX(10px);
-        opacity: 0;
-        z-index: -1;
-    }
+    50% {
+        transform: scale(1.2); 
+    }  
 }
 
 .work-item {
@@ -91,7 +77,7 @@
 
         .work-item-button {
             align-self: center;
-
+ 
             .work-item-more {
                 border: 3px solid $pavement;
                 border-radius: 40px;
@@ -107,18 +93,26 @@
                 }
             }
         }
+
+        .work-item-button:hover{
+            .work-item-more{
+                background-color: $deepcustard;
+                border-color: $deepcustard;
+            }
+        }
     } 
 
     &:hover .more-icon {
-        animation: moveForward 1s infinite;
+        animation: pulsate 2s infinite;
         opacity: 1; 
         z-index: 1;         
     }
         
     &:hover .work-item-more {
+        animation: pulsate 2s infinite;
         border-width: 3px;
         border: 3px solid transparent;
-        background-color: $deepcustard;
+        background-color: $teal;
     }
 }
 

@@ -20,7 +20,7 @@ const WorkItem = ({ number, title, description, skills }) => {
         <div className="work-item-skills">{skills}</div>
         <div className="work-item-button">
           <Link to={route.path}>
-            <div className="work-item-more">
+            <div className="work-item-more" title="See details">
               <MdKeyboardArrowRight className="more-icon" />
             </div>
           </Link>
