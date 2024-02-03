@@ -25,7 +25,7 @@ const Works = () => {
       <WorkItem
         title="Chat Away"
         number={3}
-        description="Completing a seven-month educational journey, this full-stack project is a forum built to showcase the skills and knowledge acquired"
+        description="A full-stack project - a forum, built to showcase the skills and knowledge acquired"
         skills={[
           <ReactIcon key="react-icon" />,
           <NodeIcon key="node-icon" />,
@@ -36,7 +36,7 @@ const Works = () => {
       <WorkItem
         title="Portfolio"
         number={4}
-        description="A comprehensive portfolio project designed display my collection of work"
+        description="A comprehensive portfolio project designed to display my collection of work"
         skills={[<ReactIcon key="react-icon" />, <ScssIcon key="scss-icon" />]}
       />
     </div>
