@@ -17,9 +17,11 @@ const ContactItems = () => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        {mapIsHovered && <Map coords={cityCoords} />}
+        <div className="map-container">
+          {mapIsHovered && <Map coords={cityCoords} />}
+        </div>
         <GoLocation className="icon" />
-        Vilnius, Lithuania
+        <span className="location-text">Vilnius, Lithuania</span>
       </div>
       <div className="contact-item contact-item-email">
         <GoMail className="icon" />

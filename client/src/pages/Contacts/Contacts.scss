@@ -3,7 +3,6 @@
 
 
 .contacts-container {
-    background-color: green;
     background-color: $newgrey;
     display: grid;
     grid-template-columns: 1fr;
@@ -39,15 +38,18 @@
 
 @media screen and (min-width: 1024px){
     .contacts-container{
-
-        padding: 0rem 7rem 3rem 7rem;
+        padding-bottom: 3rem;
+        padding-right: 0;
         grid-template-columns: 1fr 1fr;
         align-items: flex-start;
+        column-gap: 10rem;
         .email-items-container{
             align-self: start;
+            justify-self: end;
         }
         .contact-items-container{
             grid-template-columns: 1fr;
+            justify-self: start;
         }
     }
 }

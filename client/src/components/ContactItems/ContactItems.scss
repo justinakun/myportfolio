@@ -9,11 +9,24 @@
         display: flex;
         align-items: center;
         font-family: $linkFont;
+        position: relative;
 
         .icon {
             font-size: 3rem;
             margin-right: 1rem;
-        }    
+        }
+        
+        .map-container{
+            position: absolute;
+            top: -270%;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
+
+        .location-text {
+            z-index: 1;
+        }
     }
         
     .location {
