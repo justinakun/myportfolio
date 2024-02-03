@@ -3,61 +3,51 @@
 
 
 .contacts-container {
+    background-color: green;
     background-color: $newgrey;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     justify-items: center;
-    min-height: 100vh;
-    gap: 10rem;
-    margin-left: 4rem;
-
-    .email-items-container {
-        justify-self: end;
-    }
+    align-items: center;
+    row-gap: 3rem;
+    
  
     .contact-items-container {
-        justify-self: start;
-        display: flex-box;
+        row-gap: 1rem;
+        text-align: center;
+        padding-bottom: 2rem;
         
         .mail-bird {
-            width: 250px;
-            height: 200px;
-        }
-    
+            width: 300px;
+            height: 250px;
+            padding-bottom: 1rem;
+        }    
     }
-    }
+}
 
-    @media screen and (max-width: 900px){
-        .contacts-container {
-            grid-template-columns: 1fr;
+@media screen and (min-width: 768px) {
+    .contacts-container{
+        .contact-items-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             justify-items: center;
-            margin: 0;
-            row-gap: 5rem;
-            padding-bottom: 3rem;
-
-            .email-items-container {
-                justify-self: center;
-            }
-
-            .contact-items-container {
-                justify-self: center;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                justify-items: center;
-                gap: 3rem;
-            }
-            
+            align-items: center;
+            column-gap: 2rem;
         }
     }
+}
 
-    @media screen and (max-width: 700px){
-        .contacts-container{
-            .contact-items-container{
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr;
-            }
+@media screen and (min-width: 1024px){
+    .contacts-container{
 
+        padding: 0rem 7rem 3rem 7rem;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
+        .email-items-container{
+            align-self: start;
         }
-
+        .contact-items-container{
+            grid-template-columns: 1fr;
+        }
     }
+}
