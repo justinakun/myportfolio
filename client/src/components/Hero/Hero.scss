@@ -90,6 +90,7 @@
 @media screen and (min-width: 992px) {
     .hero-container {
         grid-template-columns: 1fr 1fr;
+        justify-items: center;
 
         .hero-description {
                .hero-description-top{

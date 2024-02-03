@@ -4,19 +4,20 @@
 
 .topbar-container {
     display: grid;
-    grid-template-columns: 1fr; // Start with a single column for mobile
+    grid-template-columns: 1fr; 
     align-items: center;
-    padding: 1rem; // Adjust padding for mobile
-    gap: 2rem; // Ensure space between logo and navigation on mobile
-    justify-items: center; // Center items for mobile layout
+    padding: 1rem; 
+    gap: 2rem; 
+    justify-items: center; 
 
     .logo-container {
         font-family: $logoFont;
-        font-size: large; // Adjust size as needed for mobile visibility
+        font-size: large; 
         font-weight: bold;
         color: $pavement;
         cursor: default;
-        text-align: center; // Ensure logo is centered on mobile
+        text-align: center;
+        padding: 1.5rem;
     }
 
     .logo-container:hover {
@@ -25,23 +26,23 @@
     }
 
     .navigation-items {
-        display: grid; // Use grid layout for mobile to stack items
-        grid-template-columns: 1fr; // Single column layout for mobile
-        justify-items: center; // Center navigation items on mobile
+        display: grid; 
+        grid-template-columns: 1fr; 
+        justify-items: center; 
         align-items: center;
-        gap: 1rem; // Adjust gap for mobile layout
+        gap: 1rem;
+        padding-bottom: 1rem; 
 
         .nav-items-div {
-            display: grid; // Stack navigation items vertically on mobile
-            justify-items: center; // Center items in their container
-            gap: 1rem; // Adjust gap between navigation items
+            display: grid; 
+            justify-items: center; 
+            gap: 1rem; 
 
             .nav-item {
-                padding: 0; // Remove padding for mobile
+                padding: 0; 
                 align-self: center;
                 font-family: $linkFont;
-                text-align: center; // Center text for each navigation item
-                padding-bottom: 1rem; // Add some space between navigation items
+                text-align: center; 
             }
 
             .nav-item:hover {
@@ -59,17 +60,17 @@
 
 @media screen and (min-width: 599px) {
     .topbar-container {
-        // Adjustments for tablets or larger mobile devices
-        grid-template-columns: 1fr; // Keep a single column but adjust other styles as needed
-        padding: 1.5rem; // Slightly increase padding
+        grid-template-columns: 1fr; 
+        padding: 1.5rem;
 
         .navigation-items {
-            display: flex; // Switch back to flex layout for horizontal alignment
+            display: flex;
             justify-content: right;
-            gap: 1.5rem; // Adjust gap for increased space
+            gap: 1.5rem;
+            padding-bottom: 0rem;
 
             .nav-items-div {
-                display: flex; // Keep horizontal layout for navigation items
+                display: flex; 
             }
         }
     }
@@ -78,20 +79,16 @@
 @media screen and (min-width: 768px) {
     .topbar-container {
         display: grid;
-        grid-template-columns: 1.2fr 6fr; // Return to original layout for desktop
-        padding: 2rem; // Original padding
-        justify-items: start; // Align items to start for wider screens
-
-        .logo-container {
-            // No specific changes needed here, revert to default if any were made for mobile/tablet
-        }
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+        justify-items: start; 
 
         .navigation-items {
-            justify-content: right; // Align navigation items to the right
-            gap: 2rem; // Original gap
+            justify-self: end;
+            gap: 2rem;
 
             .nav-items-div .nav-item {
-                padding-right: 2rem; // Reintroduce padding between navigation items
+                padding-right: 1rem
             }
         }
     }
