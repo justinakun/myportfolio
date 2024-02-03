@@ -5,27 +5,57 @@
     background-color: $newgrey;
     color: $pavement;
     display: grid;
+    grid-template-columns: 1fr;
     justify-items: center;
-    .works-two-title {
+    text-align: justify;
+
+    .works-two-title,
+    .works-two-description,
+    .works-two-comment {
         padding: 2rem;
     }
 
-    .works-two-description {
-        padding: 2rem;
-        width: 700px;
-        text-align: center;
+    .works-two-image {
+        justify-self: center;
 
-        .github-link {
-            text-decoration:underline;
-        }
-        .github-link:hover{
-            color: $deepcustard;
+        img {
+            width: 400px;            
         }
     }
 
-    .works-two-comment{
-        padding: 3rem;
-        width: 700px;
-        text-align: center;
+    .works-two-small-image img {
+        width: 400px;
+    }    
+}
+
+@media screen and (min-width: 600px) {
+    .works-two-container{
+
+        .works-two-description,
+        .works-two-comment{
+            width: 500px;
+        }
+
+        .works-two-image {
+            padding: 0rem 5rem;
+        }
+
+        .works-two-image img{
+            width: 100%;
+            max-width: 100%;
+            justify-self: center;
+        }
     }
+}
+
+@media screen and (min-width: 768px){
+    .works-two-container{
+        .works-two-description,
+        .works-two-comment{
+            width: 650px;
+       }
+       .short-comment{
+        text-align: center;
+       }
+    }    
 }

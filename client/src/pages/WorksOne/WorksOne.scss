@@ -5,30 +5,60 @@
     background-color: $newgrey;
     color: $pavement;
     display: grid;
+    grid-template-columns: 1fr;
     justify-items: center;
-    .works-one-title {
+    text-align: justify;
+
+    .works-one-title,
+    .works-one-description,
+    .works-one-comment {
         padding: 2rem;
     }
 
-    .works-one-description {
-        padding: 2rem;
-        width: 700px;
+    .works-one-comment{
         text-align: center;
     }
+
     .works-one-image {
         justify-self: center;
 
         img {
-            width: 800px;            
+            width: 400px;            
         }
-    }
-    .works-one-comment{
-        padding: 3rem;
     }
 
-    .works-one-small-image{
-        img {
-            width: 400px;
+    .works-one-small-image img {
+        width: 400px;
+    }    
+}
+
+@media screen and (min-width: 600px) {
+    .works-one-container{
+
+        .works-one-description{
+            width: 500px;
+        }
+
+        .works-one-image {
+            padding: 0rem 5rem;
+        }
+
+        .works-one-image img{
+            width: 100%;
+            max-width: 100%;
+            justify-self: center;
         }
     }
+}
+
+@media screen and (min-width: 768px){
+    .works-one-container{
+        .works-one-description,
+        .works-one-comment{
+            width: 650px;
+       }
+       .short-comment{
+        text-align: center;
+       }
+    }    
 }

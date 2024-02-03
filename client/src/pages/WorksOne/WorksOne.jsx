@@ -4,7 +4,6 @@ const WorksOne = () => {
   return (
     <div className="works-one-container">
       <h1 className="works-one-title">NFT Landing</h1>
-
       <div className="works-one-description">
         Here is the final project for the HTML and CSS module of the Front-End
         course. This page showcases responsive design, which you can discover by

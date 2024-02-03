@@ -5,37 +5,57 @@
     background-color: $newgrey;
     color: $pavement;
     display: grid;
+    grid-template-columns: 1fr;
     justify-items: center;
-    .works-three-title {
-        padding: 2rem;
-    }
+    text-align: justify;
 
-    .works-three-description {
+    .works-three-title,
+    .works-three-description,
+    .works-three-comment {
         padding: 2rem;
-        width: 700px;
-        text-align: center;
-
-        .github-link {
-            text-decoration:underline;
-        }
-        .github-link:hover{
-            color: $deepcustard;
-        }
     }
 
     .works-three-image {
         justify-self: center;
-        
 
         img {
-            width: 800px;
-            
+            width: 400px;            
         }
     }
 
-    .works-three-comment{
-        padding: 3rem;
-        width: 700px;
-        text-align: center;
+    .works-three-small-image img {
+        width: 400px;
+    }    
+}
+
+@media screen and (min-width: 600px) {
+    .works-three-container{
+
+        .works-three-description,
+        .works-three-comment{
+            width: 480px;
+        }
+
+        .works-three-image {
+            padding: 0rem 5rem;
+        }
+
+        .works-three-image img{
+            width: 100%;
+            max-width: 100%;
+            justify-self: center;
+        }
     }
+}
+
+@media screen and (min-width: 768px){
+    .works-three-container{
+        .works-three-description,
+        .works-three-comment{
+            width: 650px;
+       }
+       .short-comment{
+        text-align: center;
+       }
+    }    
 }

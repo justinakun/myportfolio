@@ -18,7 +18,7 @@ const WorksThree = () => {
         </Link>
         .
       </div>
-      <div className="works-three-comment">
+      <div className="works-three-comment short-comment">
         In order to access the forum, a user needs to register and then log in.
       </div>
       <div className="works-three-image">
