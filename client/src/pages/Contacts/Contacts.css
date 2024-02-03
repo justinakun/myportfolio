@@ -3,9 +3,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap");
 .contacts-container {
   background-color: #1f2c3c;
-  min-height: 88vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  min-height: 100vh;
   gap: 10rem;
-  justify-content: center;
-  align-items: center;
+  margin-left: 4rem;
+}
+.contacts-container .email-items-container {
+  justify-self: end;
+}
+.contacts-container .contact-items-container {
+  justify-self: start;
+  display: flex-box;
+}
+.contacts-container .contact-items-container .mail-bird {
+  width: 250px;
+  height: 200px;
+}
+
+@media screen and (max-width: 900px) {
+  .contacts-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 0;
+    row-gap: 5rem;
+    padding-bottom: 3rem;
+  }
+  .contacts-container .email-items-container {
+    justify-self: center;
+  }
+  .contacts-container .contact-items-container {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contacts-container .contact-items-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }/*# sourceMappingURL=Contacts.css.map */

@@ -8,7 +8,7 @@ const Main = () => {
     {
       year: "2022",
       content:
-        "In 2022 I completed Harvard University's introduction to computer science course. I learned how to think algorithmically and solve problems efficiently. Languages included C, Python, SQL, and JavaScript plus CSS and HTML.",
+        "In 2022 I completed Harvard University's introduction to computer science course. Learned to solve problems efficiently and think algorithmically. Languages included C, Python, SQL, and JavaScript plus CSS and HTML.",
       title: "CS50x",
       backgroundColor: "orange",
     },

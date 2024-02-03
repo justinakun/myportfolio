@@ -3,25 +3,25 @@
 
 .hero-container {
     display: grid;
-    grid-template-columns: 1fr; // Default to single column for mobile
-    justify-items: center; // Center items for mobile layout
+    grid-template-columns: 1fr; 
+    justify-items: center; 
 
     .hero-image-container {
         .hero-image {
-            width: 350px; // Adjust for mobile size
-            height: 250px; // Adjust for mobile size
+            width: 350px; 
+            height: 250px; 
             border-radius: 20px;
-            border: 10px solid rgba(31, 44, 60, 0.5); // Use rgba for alpha channel
+            border: 10px solid rgba(31, 44, 60, 0.5); 
         }        
     }
 
     .hero-description {
         display: grid;
-        grid-template-rows: auto; // Auto layout for mobile
-        justify-items: center; // Center items for mobile
+        grid-template-rows: auto; 
+        justify-items: center; 
         color: $pavement; 
-        padding-top: 3rem; // Adjusted padding for mobile
-        padding-bottom: 2rem; // Adjusted padding for mobile
+        padding-top: 3rem; 
+        padding-bottom: 2rem;
 
         .hero-description-top {
             align-self: flex-end;
@@ -29,16 +29,16 @@
         
         .hero-description-middle {
             font-family: $buttonFont;
-            font-size: 4rem; // Adjust font size for mobile
+            font-size: 4rem; 
             font-weight: light;
             margin: 0;
-            text-align: center; // Center text for mobile
+            text-align: center; 
         }
 
         .hero-beads {
             align-self: flex-start;  
-            padding-top: 3rem; // Adjusted padding for mobile
-            padding-bottom: 1rem; // Adjusted padding for mobile          
+            padding-top: 3rem; 
+            padding-bottom: 1rem; 
         }
 
         .hero-description-bottom {
@@ -47,25 +47,24 @@
             justify-self: center;
             font-family: $linkFont;
             justify-items: center;
-            width: 300px; // Adjust width for mobile
-            text-align: center; // Center text for mobile
+            width: 300px; 
+            text-align: center; 
         }
     }
 }
 
-// Media queries for progressively larger screens
 @media screen and (min-width: 600px) {
     .hero-container {
-        grid-template-columns: 1fr; // Maintain single column for smaller screens
+        grid-template-columns: 1fr; 
 
         .hero-image-container .hero-image {
-            width: 450px; // Adjust for intermediate size
-            height: 350px; // Adjust for intermediate size
+            width: 450px; 
+            height: 350px; 
         }
 
         .hero-description {
             .hero-description-middle {
-                font-size: 5rem; // Adjust font size for larger screens
+                font-size: 5rem; 
             }
         }
     }
@@ -73,26 +72,60 @@
 
 @media screen and (min-width: 768px) {
     .hero-container {
-        grid-template-columns: 1fr 1fr; // Two columns for larger screens
+        .hero-description{
+            padding: 0rem;
 
-        .hero-image-container .hero-image {
-            width: 480px; // Adjust for larger screens
-            height: 380px; // Adjust for larger screens
+            .hero-description-middle{
+                padding-top: 2rem;
+                font-size: 5rem;
+            }
         }
+        .hero-image-container .hero-image {
+            width: 480px; 
+            height: 380px; 
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero-container {
+        grid-template-columns: 1fr 1fr;
 
         .hero-description {
-            justify-items: right; // Align right for larger screens
-            grid-template-rows: 1.5fr 1.4fr 1fr 2fr; // Specific row sizing for larger screens
-            .hero-description-middle {
-                font-size: 6rem; // Original font size for larger screens
-                text-align: end; // Align text to the end for larger screens
+               .hero-description-top{
+                justify-self: end; 
+                text-align: end;
             }
+
+            .hero-description-middle {
+                font-size: 5rem;
+                justify-self: end;
+                text-align: end;
+                line-height: 100%;
+            }
+
+            .hero-beads{
+                justify-self: end;
+                text-align: end;
+            }
+
             .hero-description-bottom {
-                text-align: end; // Align text to the end for larger screens
-                width: 250px; // Original width for larger screens
+                width: 250px;
+                justify-self: end; 
+                text-align: end;
             }
         }
     }
 }
 
-// Add additional media queries as needed for even larger breakpoints
+@media screen and (min-width: 1210px){
+    .hero-container{
+        .hero-description{
+            .hero-description-middle{
+                font-size: 6rem;
+            }
+        }
+    }
+
+}
+

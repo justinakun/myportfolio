@@ -3,41 +3,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap");
 .hero-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
-.hero-container .hero-image-container {
-  overflow: hidden;
+.hero-container .hero-image-container .hero-image {
+  width: 350px;
+  height: 250px;
   border-radius: 20px;
   border: 10px solid rgba(31, 44, 60, 0.5);
 }
-.hero-container .hero-image-container .hero-image {
-  width: 90%;
-}
 .hero-container .hero-description {
   display: grid;
-  grid-template-rows: 2fr 2fr 1fr 2fr;
-  justify-items: right;
+  grid-template-rows: auto;
+  justify-items: center;
   color: #EDEAE5;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 .hero-container .hero-description .hero-description-top {
   align-self: flex-end;
 }
 .hero-container .hero-description .hero-description-middle {
   font-family: "Oswald", sans-serif;
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: light;
   margin: 0;
+  text-align: center;
 }
 .hero-container .hero-description .hero-beads {
   align-self: flex-start;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 .hero-container .hero-description .hero-description-bottom {
   align-self: flex-start;
   color: #EDEAE5;
-  justify-self: flex-end;
+  justify-self: center;
   font-family: "REM", sans-serif;
+  justify-items: center;
+  width: 300px;
+  text-align: center;
 }
-.hero-container .hero-description .hero-description-bottom .hero-bottom {
-  width: 250px;
-  text-align: end;
+
+@media screen and (min-width: 600px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+  .hero-container .hero-image-container .hero-image {
+    width: 450px;
+    height: 350px;
+  }
+  .hero-container .hero-description .hero-description-middle {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-container .hero-image-container .hero-image {
+    width: 480px;
+    height: 380px;
+  }
+  .hero-container .hero-description {
+    justify-items: right;
+    grid-template-rows: 1.5fr 1.4fr 1fr 2fr;
+  }
+  .hero-container .hero-description .hero-description-middle {
+    font-size: 6rem;
+    text-align: end;
+  }
+  .hero-container .hero-description .hero-description-bottom {
+    text-align: end;
+    width: 250px;
+  }
 }/*# sourceMappingURL=Hero.css.map */

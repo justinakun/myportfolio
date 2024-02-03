@@ -3,29 +3,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap");
 .topbar-container {
   display: grid;
-  grid-template-columns: 2fr 6fr;
+  grid-template-columns: 1fr;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
+  gap: 2rem;
+  justify-items: center;
 }
 .topbar-container .logo-container {
-  font-family: "REM", sans-serif;
+  font-family: "Montserrat Subrayada", sans-serif;
   font-size: large;
+  font-weight: bold;
   color: #EDEAE5;
+  cursor: default;
+  text-align: center;
+}
+.topbar-container .logo-container:hover {
+  cursor: pointer;
+  color: #FCE181;
 }
 .topbar-container .navigation-items {
-  display: flex;
-  justify-content: right;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .topbar-container .navigation-items .nav-items-div {
-  display: flex;
-  align-content: center;
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
 }
 .topbar-container .navigation-items .nav-items-div .nav-item {
-  padding-right: 2rem;
+  padding: 0;
   align-self: center;
   font-family: "REM", sans-serif;
+  text-align: center;
+  padding-bottom: 1rem;
 }
 .topbar-container .navigation-items .nav-items-div .nav-item:hover {
   color: #f09e54;
@@ -34,4 +47,34 @@
   font-size: 1.5rem;
   color: #EDEAE5;
   align-self: center;
+}
+
+@media screen and (min-width: 599px) {
+  .topbar-container {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+  .topbar-container .navigation-items {
+    display: flex;
+    justify-content: right;
+    gap: 1.5rem;
+  }
+  .topbar-container .navigation-items .nav-items-div {
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .topbar-container {
+    display: grid;
+    grid-template-columns: 1.2fr 6fr;
+    padding: 2rem;
+    justify-items: start;
+  }
+  .topbar-container .navigation-items {
+    justify-content: right;
+    gap: 2rem;
+  }
+  .topbar-container .navigation-items .nav-items-div .nav-item {
+    padding-right: 2rem;
+  }
 }/*# sourceMappingURL=Topbar.css.map */

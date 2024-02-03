@@ -7,10 +7,8 @@
 .contacts-items .contact-item {
   padding-bottom: 1rem;
   display: flex;
-  justify-content: left;
   align-items: center;
   font-family: "REM", sans-serif;
-  width: 300px;
 }
 .contacts-items .contact-item .icon {
   font-size: 3rem;
@@ -18,4 +16,16 @@
 }
 .contacts-items .location {
   cursor: default;
+}
+.contacts-items .contact-item-email,
+.contacts-items .contact-item-link,
+.contacts-items .contact-item-location {
+  position: static;
+}
+.contacts-items .contact-item-email:hover {
+  color: #f09e54;
+}
+.contacts-items .contact-item:hover .icon,
+.contacts-items .contact-item:hover .contact-item-link {
+  color: #f09e54;
 }/*# sourceMappingURL=ContactItems.css.map */

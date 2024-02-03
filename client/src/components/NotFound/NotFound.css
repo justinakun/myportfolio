@@ -1,13 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=REM:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap");
-.footer-container {
-  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+.not-found-container {
   color: #EDEAE5;
-  background-color: #1f2c3c;
+  font-family: "REM", sans-serif;
+  text-align: center;
+  height: calc(100vh - 170px);
+}
+.not-found-container h1 {
+  padding: 3rem;
+}
+.not-found-container p {
+  padding: 0 15rem 0 15rem;
+}
+.not-found-container img {
   padding: 2rem;
-  margin-top: 0;
-  display: flex;
-  justify-content: center;
-  cursor: default;
-}/*# sourceMappingURL=Footer.css.map */
+}/*# sourceMappingURL=NotFound.css.map */

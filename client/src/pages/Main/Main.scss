@@ -6,6 +6,7 @@
     display: grid;
     color: $pavement;
     cursor: default;
+    padding-bottom: 2rem;
     
     .container-slides {
         padding-bottom: 1.3rem;
@@ -13,39 +14,38 @@
         justify-items: stretch;
         align-items: center;
         font-family: $buttonFont;
-        padding-top: 4rem; // Mobile padding top
+        padding-top: 4rem; 
 
         .container-slides-title {
             padding-bottom: 3rem;
-            font-size: 2rem; // Mobile font size
+            font-size: 2rem; 
             justify-self: center;
         }
 
         .bubble-and-slider {
             display: grid;
-            grid-template-columns: 1fr; // Mobile single column
-            gap: 2rem; // Adjust as needed for mobile
+            grid-template-columns: 1fr; 
+            gap: 2rem; 
             align-items: center;
-            row-gap: 4rem; // Increased gap for mobile layout
+            row-gap: 4rem; 
 
             .image-slider-main {
-                justify-self: center; // Centered for mobile
+                justify-self: center;
             }
         }        
     }
 }
 
-// Media queries for progressively larger screens
 @media screen and (min-width: 600px) {
     .main-container {
-        margin: 0 3rem; // Adjust margin if necessary
+        margin: 0 3rem; 
 
         .container-slides {
             .container-slides-title {
-                font-size: 3rem; // Adjusted font size for larger screens
+                font-size: 3rem; 
             }
             .bubble-and-slider {
-                grid-template-columns: 1fr; // Adjust layout as needed for this breakpoint
+                grid-template-columns: 1fr; 
             }
         }
     }
@@ -55,15 +55,22 @@
     .main-container {
         .container-slides {
             .bubble-and-slider {
-                grid-template-columns: 1fr 1fr; // Two-column layout for larger screens
-                gap: 2rem; // Adjust gap as needed
+                gap: 2rem; 
                 .image-slider-main {
-                    justify-self: end; // Align to end for larger screens
+                    justify-self: center; 
                 }
             }
         }
     }
 }
 
-// Add additional media queries as needed for larger breakpoints
-
+@media screen and (min-width: 992px){
+    .main-container{
+        .container-slides{
+            padding-top: 5rem;
+            .bubble-and-slider{
+                grid-template-columns: 1fr 1.5fr;
+            }
+        }
+    }
+}

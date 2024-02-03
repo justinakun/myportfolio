@@ -2,33 +2,32 @@
 @import url("https://fonts.googleapis.com/css2?family=REM:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap");
 .slider-container {
-  width: 500px;
-  height: 320px;
-  position: "relative";
+  width: 100%;
+  max-width: 390px;
+  height: 350px;
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  background-color: #026670;
-  border: 3px solid #25262c;
+  background-color: #28384d;
   border-radius: 15px;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+  cursor: default;
 }
 .slider-container .slider-arrow {
-  top: "50%";
-  font-size: 2.5rem;
+  top: 50%;
+  font-size: 1.5rem;
   cursor: pointer;
-  place-self: center center;
+  place-self: center;
   opacity: 0.3;
 }
-.slider-container .left-slider-arrow {
-  left: "32px";
-}
-.slider-container .right-slider-arrow {
-  right: "32px";
+.slider-container .slider-arrow:hover {
+  opacity: 1;
 }
 .slider-container .slide-container {
   font-family: "REM", sans-serif;
-  color: #000;
-  background-position: "center";
-  background-size: "cover";
+  color: #EDEAE5;
+  background-position: center;
+  background-size: cover;
   display: grid;
   grid-template-rows: 3fr 4fr 3fr;
 }
@@ -37,12 +36,14 @@
   justify-content: space-between;
   align-items: center;
 }
-.slider-container .slide-container .slide-heading .slide-year {
+.slider-container .slide-container .slide-heading .slide-year, .slider-container .slide-container .slide-heading .slide-title {
   opacity: 0.3;
+  font-size: 1.5rem;
 }
 .slider-container .slide-container .slide-content {
   text-align: right;
   align-self: center;
+  font-size: 0.9rem;
 }
 .slider-container .slide-container .slides-lines-container {
   display: flex;
@@ -56,5 +57,31 @@
   opacity: 0.3;
 }
 .slider-container .slide-container .slides-lines-container .current-line {
-  opacity: 10;
+  opacity: 1;
+}
+
+@media screen and (min-width: 600px) {
+  .slider-container {
+    width: 100%;
+    max-width: 500px;
+  }
+  .slider-arrow {
+    font-size: 2rem;
+  }
+  .slide-heading .slide-year, .slide-heading .slide-title {
+    font-size: 2rem;
+  }
+  .slide-content {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .slider-container {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1210px) {
+  .slider-container {
+    max-width: 500px;
+  }
 }/*# sourceMappingURL=ImageSlider.css.map */
