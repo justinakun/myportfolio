@@ -7,17 +7,29 @@
     color: $pavement;
     font-family: $linkFont;
     text-align: center;
-    height: calc(100vh - 170px);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
 
     h1 {
         padding: 3rem;
     }
 
-    p {
-        padding: 0 15rem 0 15rem;
+    p{
+        padding: 0rem 2rem;
+        text-align: justify;
     }
 
     img {
         padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .not-found-container{
+        p{
+            width: 500px;
+        }
     }
 }

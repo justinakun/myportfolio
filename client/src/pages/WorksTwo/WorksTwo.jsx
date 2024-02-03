@@ -13,6 +13,7 @@ const WorksTwo = () => {
         <Link
           className="github-link"
           to="https://github.com/justinakun/react/tree/main/component_task"
+          title="Go to GitHub"
         >
           here
         </Link>

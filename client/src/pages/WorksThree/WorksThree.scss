@@ -15,6 +15,15 @@
         padding: 2rem;
     }
 
+    .github-link{
+        border-bottom: 1px solid $pavement;
+    }
+
+    .github-link:hover{
+        color: $deepcustard;
+        border-color: $deepcustard;
+    }
+
     .works-three-image {
         justify-self: center;
 

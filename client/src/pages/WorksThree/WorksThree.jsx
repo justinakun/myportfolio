@@ -13,6 +13,7 @@ const WorksThree = () => {
         <Link
           className="github-link"
           to="https://github.com/justinakun/final-project"
+          title="Go to GitHub"
         >
           here
         </Link>
