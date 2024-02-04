@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import { TfiLayoutLineSolid } from "react-icons/tfi";
-import "./ImageSlider.scss";
-import CVModal from "../CVModal/CVModal";
+import "./Slider.scss";
 
-const ImageSlider = ({ slides }) => {
+const Slider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [autoSlideEnabled, setAutoSlideEnabled] = useState(true);
 
@@ -24,12 +23,10 @@ const ImageSlider = ({ slides }) => {
     setCurrentIndex(slideIndex);
   };
 
-  // Function to stop the automatic sliding
   const stopAutoSlide = () => {
     setAutoSlideEnabled(false);
   };
 
-  //Function to re-start the automatic sliding
   const restartAutoSlide = () => {
     setAutoSlideEnabled(true);
   };
@@ -48,7 +45,11 @@ const ImageSlider = ({ slides }) => {
   const isLastSlide = currentIndex === slides.length - 1;
 
   return (
-    <div className="slider-container">
+    <div
+      className="slider-container"
+      onMouseEnter={stopAutoSlide}
+      onMouseLeave={restartAutoSlide}
+    >
       <div className="left-slider-arrow slider-arrow" onClick={goToPrevious}>
         <SlArrowLeft />
       </div>
@@ -79,4 +80,4 @@ const ImageSlider = ({ slides }) => {
   );
 };
 
-export default ImageSlider;
+export default Slider;

@@ -1,5 +1,5 @@
 import Hero from "../../components/Hero/Hero";
-import ImageSlider from "../../components/ImageSlider/ImageSlider";
+import Slider from "../../components/Slider/Slider";
 import "./Main.scss";
 import SkillBubble from "../../components/SkillBubble/SkillBubble";
 
@@ -30,7 +30,7 @@ const Main = () => {
             <SkillBubble />
           </div>
           <div className="image-slider-main">
-            <ImageSlider slides={slides} />
+            <Slider slides={slides} />
           </div>
         </div>
       </div>
