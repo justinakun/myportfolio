@@ -10,6 +10,7 @@
         align-items: center;
         font-family: $linkFont;
         position: relative;
+        width: 300px;
 
         .icon {
             font-size: 3rem;
@@ -26,6 +27,10 @@
 
         .location-text {
             z-index: 1;
+        }
+
+        .location-text:hover {
+            color: $deepcustard;
         }
     }
         

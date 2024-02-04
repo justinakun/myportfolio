@@ -55,10 +55,10 @@ const WorksThree = () => {
       </div>
       <div className="works-three-image">
         <img src="/chatnewquestion.png" alt="chatnewquestion" />
-      </div>{" "}
+      </div>
       <br />
       <div className="works-three-image">
-        <img src="/chatlisasquestionmain.png" alt="chatnewquestion" />
+        <img src="/chatlisasquestionmain.png" alt="chatlisasquestionmain" />
       </div>
       <div className="works-three-comment">
         To access a specific thread, a user needs to click on the question on

@@ -6,43 +6,63 @@
     display: grid;
     grid-template-columns: 1fr; 
     align-items: center;
-    padding: 1rem; 
     gap: 2rem; 
-    justify-items: center; 
+    justify-items: center;
 
-    .logo-container {
-        font-family: $logoFont;
-        font-size: large; 
-        font-weight: bold;
-        color: $pavement;
-        cursor: default;
-        text-align: center;
-        padding: 1.5rem;
+    .logo-and-burger{
+        display: flex;
+        align-items: center;
+        justify-content:center; 
+
+        .logo-container {
+            font-family: $logoFont;
+            font-size: large; 
+            font-weight: bold;
+            color: $pavement;
+            cursor: default;
+            text-align: center;
+            padding: 1.5rem;            
+        }
+    
+        .logo-container:hover {
+            cursor: pointer;
+            color: $custard;
+        }
+
+        .hamburger{
+            color: $pavement;
+            font-size: 1.7rem;
+            padding: 1.5rem;
+        }
+    
+        .hamburger:hover{
+            color: $deepcustard;
+            cursor: pointer;
+        }     
     }
 
-    .logo-container:hover {
-        cursor: pointer;
-        color: $custard;
-    }
-
+    .menu-closed{
+        display: none;
+    }    
+    
     .navigation-items {
         display: grid; 
         grid-template-columns: 1fr; 
         justify-items: center; 
         align-items: center;
         gap: 1rem;
-        padding-bottom: 1rem; 
+        padding-bottom: 3rem; 
 
         .nav-items-div {
             display: grid; 
             justify-items: center; 
-            gap: 1rem; 
+            gap: 1rem;
 
             .nav-item {
-                padding: 0; 
                 align-self: center;
                 font-family: $linkFont;
                 text-align: center; 
+                margin: 0;
             }
 
             .nav-item:hover {
@@ -63,6 +83,19 @@
         grid-template-columns: 1fr; 
         padding: 1.5rem;
 
+        .logo-and-burger{
+            justify-content:center;
+        }
+
+        .hamburger{
+            display: none;
+        }
+
+        .menu-closed,
+        .menu-open{
+            display: contents;
+        }
+
         .navigation-items {
             display: flex;
             justify-content: right;
@@ -71,6 +104,11 @@
 
             .nav-items-div {
                 display: flex; 
+
+                .nav-item{
+                    width:auto;
+                    padding: 0;
+                }
             }
         }
     }
