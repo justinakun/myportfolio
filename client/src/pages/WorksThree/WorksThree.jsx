@@ -8,7 +8,7 @@ const WorksThree = () => {
       <div className="works-three-description">
         This is the final project for the Front-End course. It combines both
         Front-End and Back-End development, resulting in a Full-Stack
-        application. This project is a forum, you can read about it's main
+        application. This project is a forum, you can read about it&apos;s main
         features below, and you can check out the code{" "}
         <Link
           className="github-link"
@@ -37,21 +37,22 @@ const WorksThree = () => {
         <img src="/chatregister.png" alt="chatregister" />
       </div>
       <div className="works-three-comment">
-        Once logged in, the user is directed to the forum's main page where all
-        threads are displayed. By default, the newest questions appear at the
-        top, while older ones are at the bottom. If the user wishes to view the
-        oldest questions first, they can achieve this with a single click on the
-        'Oldest' button. Additionally, users can easily filter questions to view
-        only answered or unanswered ones by clicking the relevant buttons.
+        Once logged in, the user is directed to the forum&apos;s main page where
+        all threads are displayed. By default, the newest questions appear at
+        the top, while older ones are at the bottom. If the user wishes to view
+        the oldest questions first, they can achieve this with a single click on
+        the &apos;Oldest&apos; button. Additionally, users can easily filter
+        questions to view only answered or unanswered ones by clicking the
+        relevant buttons.
       </div>
       <div className="works-three-image">
         <img src="/chatmain.png" alt="chatmain" />
       </div>
       <div className="works-three-comment">
         To add their own question, the user can simply click on the bright
-        yellow button labeled 'Ask a Question,' type in their query, and their
-        question will immediately appear at the top of the list, as the newest
-        entry.
+        yellow button labeled &apos;Ask a Question,&apos; type in their query,
+        and their question will immediately appear at the top of the list, as
+        the newest entry.
       </div>
       <div className="works-three-image">
         <img src="/chatnewquestion.png" alt="chatnewquestion" />
@@ -66,10 +67,11 @@ const WorksThree = () => {
         question displayed at the top, followed by all the answers below. At the
         very bottom, there will be an option for the logged-in user to post
         their own answer. All questions and answers are stored in a database, so
-        if you posted a question, you'll see it attributed to "you," while other
-        users will see your name. The same applies to answers. Additionally,
-        users have the option to edit their own questions and answers. Any edits
-        made to questions or answers are visible to everyone.
+        if you posted a question, you&apos;ll see it attributed to
+        &quot;you&quot;, while other users will see your name. The same applies
+        to answers. Additionally, users have the option to edit their own
+        questions and answers. Any edits made to questions or answers are
+        visible to everyone.
       </div>
       <div className="works-three-image">
         <img src="/chatlisasanswer.png" alt="chatlisasanswer" />

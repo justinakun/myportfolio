@@ -34,7 +34,7 @@ const WorksFour = () => {
           </li>
           <li>
             Interactive Slider: This feature enables dynamic navigation through
-            content slides, adding an engaging touch to the site's design.
+            content slides, adding an engaging touch to the site&apos;s design.
           </li>
           <li>
             Material UI: Integrated Material-UI for creating user-friendly
