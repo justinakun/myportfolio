@@ -1,5 +1,5 @@
-import "./MeIcon.scss";
 import { MdFace3 } from "react-icons/md";
+import "./MeIcon.scss";
 
 const MeIcon = () => {
   return (

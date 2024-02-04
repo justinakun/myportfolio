@@ -1,5 +1,5 @@
-import "./WorksFour.scss";
 import { Link } from "react-router-dom";
+import "./WorksFour.scss";
 
 const WorksFour = () => {
   return (

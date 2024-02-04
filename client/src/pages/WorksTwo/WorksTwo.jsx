@@ -1,5 +1,6 @@
-import "./WorksTwo.scss";
 import { Link } from "react-router-dom";
+import "./WorksTwo.scss";
+
 const WorksTwo = () => {
   return (
     <div className="works-two-container">

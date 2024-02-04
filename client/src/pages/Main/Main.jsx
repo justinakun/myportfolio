@@ -1,7 +1,7 @@
 import Hero from "../../components/Hero/Hero";
 import Slider from "../../components/Slider/Slider";
-import "./Main.scss";
 import SkillBubble from "../../components/SkillBubble/SkillBubble";
+import "./Main.scss";
 
 const Main = () => {
   const slides = [

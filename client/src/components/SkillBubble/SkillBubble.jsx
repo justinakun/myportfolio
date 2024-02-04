@@ -1,4 +1,3 @@
-import "./SkillBubble.scss";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import {
   BiLogoCss3,
@@ -8,6 +7,7 @@ import {
 } from "react-icons/bi";
 import { BsFiletypeScss } from "react-icons/bs";
 import { IoLogoJavascript } from "react-icons/io5";
+import "./SkillBubble.scss";
 
 const SkillBubble = () => {
   const skillIcons = {
@@ -20,7 +20,6 @@ const SkillBubble = () => {
     React: BiLogoReact,
   };
 
-  // Array of skill names
   const skills = Object.keys(skillIcons);
 
   return (

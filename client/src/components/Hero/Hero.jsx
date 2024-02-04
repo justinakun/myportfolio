@@ -1,6 +1,5 @@
-import "./Hero.scss";
-
 import Beads from "../../components/Beads/Beads";
+import "./Hero.scss";
 
 const Hero = () => {
   return (

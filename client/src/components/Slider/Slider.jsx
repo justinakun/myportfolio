@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import { TfiLayoutLineSolid } from "react-icons/tfi";
+import PropTypes from "prop-types";
 import "./Slider.scss";
 
 const Slider = ({ slides }) => {
@@ -13,11 +14,11 @@ const Slider = ({ slides }) => {
     setCurrentIndex(newIndex);
   };
 
-  const goToNext = () => {
+  const goToNext = useCallback(() => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
-  };
+  }, [currentIndex, slides]);
 
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
@@ -35,14 +36,11 @@ const Slider = ({ slides }) => {
     let interval;
 
     if (autoSlideEnabled) {
-      interval = setInterval(goToNext, 5000);
+      interval = setInterval(goToNext, 3000);
     }
 
     return () => clearInterval(interval);
-  }, [currentIndex, autoSlideEnabled]);
-
-  // Add a flag to track if the last slide has been reached
-  const isLastSlide = currentIndex === slides.length - 1;
+  }, [currentIndex, autoSlideEnabled, goToNext]);
 
   return (
     <div
@@ -78,6 +76,16 @@ const Slider = ({ slides }) => {
       </div>
     </div>
   );
+};
+
+Slider.propTypes = {
+  slides: PropTypes.arrayOf(
+    PropTypes.shape({
+      year: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      content: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default Slider;

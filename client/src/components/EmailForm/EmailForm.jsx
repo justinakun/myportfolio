@@ -1,8 +1,8 @@
-import Button from "../../components/Button/Button";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import "./EmailForm.scss";
 import Alert from "@mui/material/Alert";
+import Button from "../../components/Button/Button";
+import "./EmailForm.scss";
 
 const EmailForm = () => {
   const [name, setName] = useState("");
@@ -121,7 +121,6 @@ const EmailForm = () => {
     }
   };
 
-  // Define a CSS class for inputs with errors
   const inputErrorClass = (error) => (error ? "error-border" : "");
 
   return (
@@ -142,7 +141,7 @@ const EmailForm = () => {
           value={name}
           onChange={handleChange}
           onBlur={handleBlur}
-          className={inputErrorClass(nameError)} // Apply error class
+          className={inputErrorClass(nameError)}
         />
         {nameError !== "" && <span>{nameError}</span>}
 
@@ -153,7 +152,7 @@ const EmailForm = () => {
           value={email}
           onChange={handleChange}
           onBlur={handleBlur}
-          className={inputErrorClass(emailError)} // Apply error class
+          className={inputErrorClass(emailError)}
         />
         {emailError !== "" && <span>{emailError}</span>}
         <input
@@ -163,7 +162,6 @@ const EmailForm = () => {
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
         />
-
         <textarea
           placeholder="Message*"
           rows="5"
@@ -171,7 +169,7 @@ const EmailForm = () => {
           value={message}
           onChange={handleChange}
           onBlur={handleBlur}
-          className={inputErrorClass(messageError)} // Apply error class
+          className={inputErrorClass(messageError)}
         />
         {messageError !== "" && <span>{messageError}</span>}
         <Button text="Send" variant="contained" type="submit" />

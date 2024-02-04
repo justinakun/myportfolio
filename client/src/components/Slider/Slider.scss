@@ -46,7 +46,7 @@
         }  
 
         .slide-content {        
-            text-align: right;
+            text-align: center;
             align-self: center;
             font-size: 0.9rem; 
         }
@@ -70,7 +70,6 @@
     }
 }
 
-// tablets and larger mobile devices
 @media screen and (min-width: 600px) {
     .slider-container {
         max-width: 450px;
@@ -89,13 +88,16 @@
     }
 }
 
+.slider-container:hover{
+    background-color: $newergreylight;
+}
+
 @media screen and (min-width: 768px) {
     .slider-container{
         width: 100%;
     }
 }
 
-// desktops and larger screens
 @media screen and (min-width: 992px) {
     .slider-container {
         max-width: 450px; 

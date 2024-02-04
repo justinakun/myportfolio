@@ -1,5 +1,6 @@
 import { BiLogoMongodb } from "react-icons/bi";
 import "./Mongodb.scss";
+
 const Mongodb = () => {
   return (
     <div className="mongodb-icon-container">

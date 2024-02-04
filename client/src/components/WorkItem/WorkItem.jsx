@@ -1,7 +1,7 @@
-import { MdKeyboardArrowRight } from "react-icons/md";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { unauthenticatedRoutes } from "../../routes/const";
+import { MdKeyboardArrowRight } from "react-icons/md";
+import PropTypes from "prop-types";
 import "./WorkItem.scss";
 
 const WorkItem = ({ number, title, description, skills }) => {

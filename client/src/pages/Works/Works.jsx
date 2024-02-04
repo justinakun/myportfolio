@@ -4,8 +4,8 @@ import CssIcon from "../../components/CssIcon/CssIcon";
 import ReactIcon from "../../components/ReactIcon/ReactIcon";
 import NodeIcon from "../../components/NodeIcon/NodeIcon";
 import ScssIcon from "../../components/ScssIcon/ScssIcon";
-import "./Works.scss";
 import Mongodb from "../../components/MongodbIcon/Mongodb";
+import "./Works.scss";
 
 const Works = () => {
   return (

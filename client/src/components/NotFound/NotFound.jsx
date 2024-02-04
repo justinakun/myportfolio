@@ -12,7 +12,6 @@ const NotFound = () => {
           better!
         </p>
       </div>
-
       <img src="/grumpy.jpg" alt="Cat the Grumpy" />
     </div>
   );

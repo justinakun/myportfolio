@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { BsDot } from "react-icons/bs";
 import Modal from "react-modal";
-import "./Topbar.scss";
 import { topbarNavigationItems } from "../../routes/const";
 import { RiMenu3Fill } from "react-icons/ri";
+import { BsDot } from "react-icons/bs";
+import "./Topbar.scss";
 
 Modal.setAppElement("#root");
 

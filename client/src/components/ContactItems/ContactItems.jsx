@@ -1,10 +1,10 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { GoLocation, GoMail } from "react-icons/go";
 import { FiGithub } from "react-icons/fi";
 import ClipboardText from "../ClipboardText/ClipboardText";
-import "./ContactItems.scss";
-import { Link } from "react-router-dom";
 import Map from "../Map/Map";
-import { useState } from "react";
+import "./ContactItems.scss";
 
 const ContactItems = () => {
   const [mapIsHovered, setIsHovered] = useState(false);

@@ -1,8 +1,9 @@
 import { useState } from "react";
 import Modal from "react-modal";
 import Button from "./../Button/Button";
+import "./CVModal.scss";
 
-Modal.setAppElement("#root"); // Set the app root element for accessibility
+Modal.setAppElement("#root");
 
 function CVModal() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
