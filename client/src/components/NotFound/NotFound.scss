@@ -4,6 +4,7 @@
 
 
 .not-found-container {
+    min-height: calc(100vh - 124px);
     color: $pavement;
     font-family: $linkFont;
     text-align: center;
