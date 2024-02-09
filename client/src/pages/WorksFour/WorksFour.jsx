@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./WorksFour.scss";
 
 const WorksFour = () => {
@@ -10,13 +9,15 @@ const WorksFour = () => {
         using React, Vite, and SCSS. It showcases my expertise in front-end
         development, ensuring optimal viewing across all devices with its fully
         responsive design. You can also check out the code{" "}
-        <Link
+        <a
           className="github-link"
-          to="https://github.com/justinakun/myportfolio"
+          href="https://github.com/justinakun/myportfolio"
           title="Go to GitHub"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           here
-        </Link>
+        </a>
         .
       </div>
       <div className="works-four-comment">

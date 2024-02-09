@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./worksthree.scss";
 
 const WorksThree = () => {
@@ -10,13 +9,15 @@ const WorksThree = () => {
         Front-End and Back-End development, resulting in a Full-Stack
         application. This project is a forum, you can read about it&apos;s main
         features below, and you can check out the code{" "}
-        <Link
+        <a
           className="github-link"
-          to="https://github.com/justinakun/final-project"
+          href="https://github.com/justinakun/final-project"
           title="Go to GitHub"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           here
-        </Link>
+        </a>
         .
       </div>
       <div className="works-three-comment short-comment">

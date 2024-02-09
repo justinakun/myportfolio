@@ -29,13 +29,15 @@ const ContactItems = () => {
       </div>
       <div className="contact-item contact-item-link">
         <FiGithub className="icon" />
-        <Link
+        <a
           className="contact-item-link"
-          to="https://github.com/justinakun"
+          href="https://github.com/justinakun"
           title="Check out all code on GitHub"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           github.com/justinakun
-        </Link>
+        </a>
       </div>
     </div>
   );

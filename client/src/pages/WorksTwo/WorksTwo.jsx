@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./WorksTwo.scss";
 
 const WorksTwo = () => {
@@ -11,13 +10,15 @@ const WorksTwo = () => {
         on &apos;The Big Bang Theory&apos;. The app was developed using React
         and styled with CSS. All flags are generated using an API and are
         randomly selected each time. You can check out the code{" "}
-        <Link
+        <a
           className="github-link"
-          to="https://github.com/justinakun/react/tree/main/component_task"
+          href="https://github.com/justinakun/react/tree/main/component_task"
           title="Go to GitHub"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           here
-        </Link>
+        </a>
         .
       </div>
       <div className="works-two-comment">
