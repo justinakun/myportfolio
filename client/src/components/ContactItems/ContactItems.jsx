@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { GoLocation, GoMail } from "react-icons/go";
 import { FiGithub } from "react-icons/fi";
 import ClipboardText from "../ClipboardText/ClipboardText";
