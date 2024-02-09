@@ -41,7 +41,7 @@ const Topbar = () => {
         </button>
         <div></div>
         <iframe
-          src="Justina Kunigonyte.pdf"
+          src="/Justina Kunigonyte.pdf"
           title="CV"
           style={{ width: "100%", height: "500px" }}
         ></iframe>
