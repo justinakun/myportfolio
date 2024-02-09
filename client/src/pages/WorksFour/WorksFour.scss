@@ -1,6 +1,7 @@
 @import "../../styles/colors.scss";
 
 .works-four-container {
+    min-height: calc(100vh - 124px);
     padding-bottom: 2rem;
     background-color: $newgrey;
     color: $pavement;
