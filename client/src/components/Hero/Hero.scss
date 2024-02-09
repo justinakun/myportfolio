@@ -5,23 +5,22 @@
     display: grid;
     grid-template-columns: 1fr; 
     justify-items: center; 
+    gap: 1rem;
 
     .hero-image-container {
-        .hero-image {
-            width: 350px; 
-            height: 250px; 
+         .hero-image {
+            max-width: 300px;
+            height: auto; 
             border-radius: 20px;
-            border: 10px solid rgba(31, 44, 60, 0.5); 
         }        
     }
 
     .hero-description {
+        padding-top: 2rem;
         display: grid;
         grid-template-rows: auto; 
         justify-items: center; 
-        color: $pavement; 
-        padding-top: 3rem; 
-        padding-bottom: 2rem;
+        color: $pavement;
 
         .hero-description-top {
             align-self: flex-end;
@@ -32,13 +31,14 @@
             font-size: 4rem; 
             font-weight: light;
             margin: 0;
+            padding: 0;
             text-align: center; 
         }
 
         .hero-beads {
             align-self: flex-start;  
             padding-top: 3rem; 
-            padding-bottom: 1rem; 
+            padding-bottom: 2rem; 
         }
 
         .hero-description-bottom {
@@ -55,11 +55,17 @@
 
 @media screen and (min-width: 600px) {
     .hero-container {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
 
         .hero-image-container .hero-image {
-            width: 450px; 
-            height: 350px; 
+            height: auto; 
+            max-width: none;
+        }
+
+        .hero-image-container{
+            .hero-image{
+                max-width: 400px;
+            }
         }
 
         .hero-description {
@@ -85,6 +91,12 @@
             width: 480px; 
             height: 380px; 
         }
+
+        .hero-image-container{
+            .hero-image{
+                max-width: none;
+            }
+        }
     }
 }
 
@@ -100,7 +112,7 @@
             }
 
             .hero-description-middle {
-                font-size: 5rem;
+                font-size: 4.5rem;
                 justify-self: end;
                 text-align: end;
                 line-height: 100%;
@@ -122,9 +134,18 @@
 
 @media screen and (min-width: 1210px){
     .hero-container{
+        column-gap: 5rem;
+        // background-color: green;
+
+        .hero-image-container {
+            .hero-image {
+               width: 500px;
+           }        
+       }
+
         .hero-description{
             .hero-description-middle{
-                font-size: 6rem;
+                font-size: 5.5rem;
             }
         }
     }

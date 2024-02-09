@@ -1,5 +1,4 @@
 import Beads from "../../components/Beads/Beads";
-import SkillIcon from "../SkillIcon/SkillIcon";
 import "./Hero.scss";
 
 const Hero = () => {

@@ -2,12 +2,14 @@
 @import "../../styles/fonts.scss";
 
 .main-container {
-    margin: 0 3rem;
+    margin: 0 2rem;
     display: grid;
+    justify-items: center;
     color: $pavement;
     cursor: default;
     padding-bottom: 2rem;
-    
+    min-height: calc(100vh - 50px - 74px);  
+   
     .container-slides {
         padding-bottom: 1.3rem;
         display: grid;
@@ -20,6 +22,7 @@
             padding-bottom: 3rem;
             font-size: 2rem; 
             justify-self: center;
+            text-align: center;
         }
 
         .bubble-and-slider {
@@ -69,7 +72,7 @@
         .container-slides{
             padding-top: 5rem;
             .bubble-and-slider{
-                grid-template-columns: 1fr 1.5fr;
+                grid-template-columns: 1fr 1fr;
             }
         }
     }
