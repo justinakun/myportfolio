@@ -8,7 +8,7 @@ const Hero = () => {
         <img src="/girlprogramming.png" alt="" className="hero-image" />
       </div>
       <div className="hero-description">
-        <h4 className="hero-description-top">WELCOME TO MY PROFILE!</h4>
+        <h4 className="hero-description-top">WELCOME TO MY PORTFOLIO!</h4>
         <p className="hero-description-middle">HELLO WORLD</p>
         <div className="hero-beads">
           <Beads />

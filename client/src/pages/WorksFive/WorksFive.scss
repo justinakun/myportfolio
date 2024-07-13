@@ -1,0 +1,89 @@
+@import "../../styles/colors.scss";
+
+.works-five-container {
+    min-height: calc(100vh - 124px);
+    padding-bottom: 2rem;
+    background-color: $newgrey;
+    color: $pavement;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: justify;
+
+    .works-five-title,
+    .works-five-description,
+    .works-five-comment {
+        padding: 2rem;
+    }
+
+    .works-five-comment{
+        ul {
+            list-style: none;
+            padding: 1rem;
+
+            li{
+                padding-bottom: 1rem;
+            }
+        }
+
+        ul li:before{
+            content: '✓';
+            color: $deepcustard;
+            padding-right: 0.5rem;
+        }
+
+    }
+
+    .github-link{
+        border-bottom: 1px solid $pavement;
+    }
+
+    .github-link:hover{
+        color: $deepcustard;
+        border-color: $deepcustard;
+    }
+
+    .works-five-image {
+        justify-self: center;
+
+        img {
+            width: 400px;            
+        }
+    }
+
+    .works-five-small-image img {
+        width: 400px;
+    }    
+}
+
+@media screen and (min-width: 600px) {
+    .works-five-container{
+
+        .works-five-description,
+        .works-five-comment{
+            width: 480px;
+        }
+
+        .works-five-image {
+            padding: 0rem 5rem;
+        }
+
+        .works-five-image img{
+            width: 100%;
+            max-width: 100%;
+            justify-self: center;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .works-five-container{
+        .works-five-description,
+        .works-five-comment{
+            width: 650px;
+       }
+       .short-comment{
+        text-align: center;
+       }
+    }    
+}

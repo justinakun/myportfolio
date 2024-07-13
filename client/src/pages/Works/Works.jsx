@@ -49,6 +49,17 @@ const Works = () => {
           <SkillIcon key="scss-icon" Icon={BsFiletypeScss} text="SCSS" />,
         ]}
       />
+            <WorkItem
+        title="E-commerce"
+        number={5}
+        description="My first e-commerce app - a full-stack project to learn and practice the MERN stack"
+        skills={[
+          <SkillIcon key="react-icon" Icon={BiLogoReact} text="React" />,
+          <SkillIcon key="node-icon" Icon={BiLogoNodejs} text="Node.js" />,
+          <SkillIcon key="mongodb-icon" Icon={BiLogoMongodb} text="MongoDB" />,
+          <SkillIcon key="css-icon" Icon={BiLogoCss3} text="CSS" />,         
+        ]}
+      />
     </div>
   );
 };
